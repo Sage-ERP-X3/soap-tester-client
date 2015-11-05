@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PARAM>
+  <GRP ID="AUS0_1">
+    <FLD NAME="USR" TYPE="Char">WSTST</FLD>
+    <FLD NAME="INTUSR" TYPE="Char">Modified by Web Service </FLD>
+    <FLD MENULAB="Yes" MENULOCAL="1" NAME="ENAFLG" TYPE="Integer">2</FLD>
+  </GRP>
+  <TAB DIM="30" ID="AUS2_1" SIZE="1">
+    <LIN NUM="1">
+      <FLD NAME="BPADES" TYPE="Char">Main Address Modified by WS</FLD>
+      <FLD NAME="ADDLIG1" TYPE="Char">Main Address1 Modified by WS</FLD>
+      <FLD NAME="ADDLIG2" TYPE="Char">Main Address2 Modified by WS</FLD>
+      <FLD NAME="ADDLIG3" TYPE="Char">Main Address3 Modified by WS</FLD>
+      <FLD NAME="POSCOD" TYPE="Char">94582</FLD>
+      <FLD NAME="WEB1" TYPE="Char">modified@sageerpx3.com</FLD>
+    </LIN>
+  </TAB>
+</PARAM>

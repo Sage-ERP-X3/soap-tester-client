@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PARAM>
+  <GRP ID="ITM0_1">
+    <FLD NAME="TCLCOD" TYPE="Char">TEST</FLD>
+    <FLD NAME="ZTCLCOD" TYPE="Char">Test created by WS</FLD>
+    <FLD MENULAB="Active" MENULOCAL="246" NAME="ITMSTA" TYPE="Integer">1</FLD>
+    <FLD NAME="ITMREF" TYPE="Char">WSITM</FLD>
+    <FLD NAME="DES1AXX" TYPE="Char">Test product created by WS</FLD>
+  </GRP>
+  <GRP ID="ITM5_1">
+    <FLD NAME="ACCCOD" TYPE="Char">FINPRODUCT</FLD>
+    <FLD NAME="ZACCCOD" TYPE="Char">Fin Goods</FLD>
+    <LST NAME="VACITM" SIZE="1" TYPE="Char">
+      <ITM>NT</ITM>
+    </LST>
+    <LST NAME="ZVACITM" SIZE="1" TYPE="Char">
+      <ITM>Sage Sales Tax</ITM>
+    </LST>
+  </GRP>
+  <GRP ID="ITM1_1">
+    <FLD NAME="DES2AXX" TYPE="Char">Test product created by WS</FLD>
+    <FLD NAME="DES3AXX" TYPE="Char">Test product created by WS</FLD>
+  </GRP>
+  <TAB DIM="4" ID="ITM3_2" SIZE="2">
+    <LIN NUM="1">
+      <FLD NAME="PCU" TYPE="Char">PAC</FLD>
+      <FLD NAME="ZPCU" TYPE="Char">Pac</FLD>
+      <FLD NAME="PCUSTUCOE" TYPE="Decimal">10</FLD>
+      <FLD MENULAB="No" MENULOCAL="1" NAME="DACPCUCOE" TYPE="Integer">1</FLD>
+      <FLD MENULAB="Unpack" MENULOCAL="2706" NAME="PCURUL" TYPE="Integer">1</FLD>
+    </LIN>
+    <LIN NUM="2">
+      <FLD NAME="PCU" TYPE="Char">PAL</FLD>
+      <FLD NAME="ZPCU" TYPE="Char">Pallet</FLD>
+      <FLD NAME="PCUSTUCOE" TYPE="Decimal">40</FLD>
+      <FLD MENULAB="No" MENULOCAL="1" NAME="DACPCUCOE" TYPE="Integer">1</FLD>
+      <FLD MENULAB="Unpack" MENULOCAL="2706" NAME="PCURUL" TYPE="Integer">1</FLD>
+    </LIN>
+  </TAB>
+</PARAM>

@@ -1,0 +1,15 @@
+{
+  "ITM0_1": {
+    "ZTCLCOD": "Modf by WS",
+    "DES1AXX": "Test product created by WS"
+  },
+  "ITM1_1": {
+    "DES2AXX": "Test product modified by WS",
+    "DES3AXX": "Test product modified by WS"
+  },
+  "ITM3_2": [
+    {
+      "PCUSTUCOE": "100",
+    }
+  ],
+}

@@ -1,0 +1,18 @@
+﻿{
+  "AUS0_1": {
+    "USR": "WSTST",
+    "INTUSR": "Modified by Web Service ",
+    "ENAFLG": "2",
+  },
+  "AUS2_1": [
+    {
+      "CODADR": "MAIN",
+      "BPADES": "Main Address Modified by WS",
+      "ADDLIG1": "Main Address Modified by WS",
+      "ADDLIG2": "Main Address Modified by WS",
+      "ADDLIG3": "Main Address Modified by WS",
+      "POSCOD": "94582",
+      "WEB1": "modified@sageerpx3.com"
+    }
+  ],
+}

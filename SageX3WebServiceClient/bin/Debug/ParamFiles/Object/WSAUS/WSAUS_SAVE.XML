@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PARAM>
+  <GRP ID="AUS0_1">
+    <FLD NAME="USR" TYPE="Char">WSTST</FLD>
+    <FLD NAME="INTUSR" TYPE="Char">User created by WS</FLD>
+    <FLD MENULAB="Yes" MENULOCAL="1" NAME="ENAFLG" TYPE="Integer">2</FLD>
+  </GRP>
+  <GRP ID="AUS1_1">
+    <FLD MENULAB="Yes" MENULOCAL="1" NAME="USRCONNECT" TYPE="Integer">2</FLD>
+    <FLD MENULAB="Yes" MENULOCAL="1" NAME="USRCONXTD" TYPE="Integer">2</FLD>
+    <FLD MENULAB="No" MENULOCAL="1" NAME="WITHOUTLDAP" TYPE="Integer">1</FLD>
+    <FLD NAME="LOGIN" TYPE="Char">WSTST</FLD>
+    <FLD NAME="CODMET" TYPE="Char" />
+    <FLD NAME="ZCODMET" TYPE="Char" />
+    <FLD NAME="WRH" TYPE="Char" />
+    <FLD NAME="PRFMEN" TYPE="Char">ADMIN</FLD>
+    <FLD NAME="ZPRFMEN" TYPE="Char">System administrator </FLD>
+    <FLD NAME="DEFMEN" TYPE="Char" />
+    <FLD NAME="PRFFCT" TYPE="Char">ADMIN</FLD>
+    <FLD NAME="ZPRFFCT" TYPE="Char">System administrator</FLD>
+    <FLD NAME="DEFFCT" TYPE="Char" />
+    <FLD NAME="ARCPRF" TYPE="Char" />
+    <FLD NAME="ZARCPRF" TYPE="Char" />
+    <FLD NAME="PRFXTD" TYPE="Char" />
+    <FLD NAME="DEFXTD" TYPE="Char" />
+    <FLD NAME="ADDEML" TYPE="Char">admin@sageerpx3.com</FLD>
+    <FLD NAME="TELEP" TYPE="Char" />
+    <FLD NAME="FAX1" TYPE="Char" />
+    <FLD NAME="ACSUSR" TYPE="Char" />
+    <FLD NAME="USRPRT" TYPE="Char" />
+  </GRP>
+  <TAB DIM="30" ID="AUS2_1" SIZE="2">
+    <LIN NUM="1">
+      <FLD NAME="CODADR" TYPE="Char">MAIN</FLD>
+      <FLD NAME="BPADES" TYPE="Char">Main Address Created by WS</FLD>
+      <FLD NAME="BPACRY" TYPE="Char">US</FLD>
+      <FLD NAME="CRYNAM" TYPE="Char">United States of America</FLD>
+      <FLD NAME="ADDLIG1" TYPE="Char">Main Address1 Created by WS</FLD>
+      <FLD NAME="ADDLIG2" TYPE="Char">Main Address2 Created by WS</FLD>
+      <FLD NAME="ADDLIG3" TYPE="Char">Main Address3Created by WS</FLD>
+      <FLD NAME="POSCOD" TYPE="Char">90501</FLD>
+      <FLD NAME="CTY" TYPE="Char">Torrance</FLD>
+      <FLD NAME="SAT" TYPE="Char">CA</FLD>
+      <FLD NAME="TEL1" TYPE="Char" />
+      <FLD NAME="TEL2" TYPE="Char" />
+      <FLD NAME="TEL3" TYPE="Char" />
+      <FLD NAME="TEL4" TYPE="Char" />
+      <FLD NAME="TEL5" TYPE="Char" />
+      <FLD NAME="WEB1" TYPE="Char">sageerpx3@sageerpx3.com</FLD>
+      <FLD NAME="WEB2" TYPE="Char" />
+      <FLD NAME="WEB3" TYPE="Char" />
+      <FLD NAME="WEB4" TYPE="Char" />
+      <FLD NAME="WEB5" TYPE="Char" />
+      <FLD NAME="FCYWEB" TYPE="Char" />
+      <FLD NAME="EXTNUM" TYPE="Char" />
+      <FLD MENULAB="Yes" MENULOCAL="1" NAME="BPAADDFLG" TYPE="Integer">2</FLD>
+      <FLD NAME="FLMOD" TYPE="Integer">0</FLD>
+    </LIN>
+    <LIN NUM="2">
+      <FLD NAME="CODADR" TYPE="Char">ALTE</FLD>
+      <FLD NAME="BPADES" TYPE="Char">Second address</FLD>
+      <FLD NAME="BPACRY" TYPE="Char">US</FLD>
+      <FLD NAME="CRYNAM" TYPE="Char">United States of America</FLD>
+      <FLD NAME="ADDLIG1" TYPE="Char">Aberdale Circle</FLD>
+      <FLD NAME="ADDLIG2" TYPE="Char">Second Address 2</FLD>
+      <FLD NAME="ADDLIG3" TYPE="Char">Second Address 3</FLD>
+      <FLD NAME="POSCOD" TYPE="Char">94582</FLD>
+      <FLD NAME="CTY" TYPE="Char">San Ramon</FLD>
+      <FLD NAME="SAT" TYPE="Char">CA</FLD>
+      <FLD NAME="WEB1" TYPE="Char">admin@sageerpx3.com</FLD>
+    </LIN>
+  </TAB>
+</PARAM>

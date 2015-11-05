@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PARAM>
+  <GRP ID="SOH0_1">
+    <FLD NAME="CUSORDREF" TYPE="Char">MODIFIED BY WS</FLD>
+  </GRP>
+  <TAB DIM="1002" ID="SOH4_1" SIZE="2">
+    <LIN NUM="1">
+      <FLD NAME="QTY" TYPE="Decimal">20</FLD>
+    </LIN>
+    <LIN NUM="2">
+      <FLD NAME="NUMLIG" TYPE="Integer">0</FLD>
+      <FLD NAME="ITMREF" TYPE="Char">FIN005</FLD>
+      <FLD NAME="DSTOFCY" TYPE="Char">PT032</FLD>
+      <FLD NAME="QTY" TYPE="Decimal">10</FLD>
+    </LIN>
+  </TAB>
+</PARAM>

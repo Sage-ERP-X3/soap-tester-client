@@ -1,0 +1,29 @@
+{
+  "BPRR_1": {
+    "BPRNAM": [
+      "WS rep company1 modified through WS",
+      "WS rep company2 modified through WS"
+    ],
+  },
+  "BPAR_1": [
+    {
+      "ADDLIG1": "Main Address1 modified through WS",
+      "ADDLIG2": "Main Address2 modified through WS",
+      "ADDLIG3": "Main Address3 modified through WS",
+      "POSCOD": "94582",
+      "BPAADDFLG": "2"
+    },
+    {
+      "CODADR": "ALTE",
+      "BPADES": "Alternate address",
+      "BPACRY": "US",
+      "CRYNAM": "United States of America",
+      "ADDLIG1": "Alt addr1 re-created through WS",
+      "ADDLIG2": "Alt addr2 re-created through WS",
+      "ADDLIG3": "Alt addr3 re-created through WS",
+      "POSCOD": "95401",
+      "BPAADDFLG": "3"
+    }
+  ],
+
+}

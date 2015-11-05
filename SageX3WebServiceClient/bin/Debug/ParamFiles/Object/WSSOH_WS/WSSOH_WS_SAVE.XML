@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PARAM>
+  <GRP ID="SOH0_1">
+    <FLD NAME="SALFCY" TYPE="Char">PT032</FLD>
+    <FLD NAME="SOHTYP" TYPE="Char">WS</FLD>
+    <FLD NAME="SOHNUM" TYPE="Char">WSSOH</FLD>
+    <FLD NAME="CUSORDREF" TYPE="Char">CREATED BY WS</FLD>
+    <FLD NAME="BPCORD" TYPE="Char">PT001</FLD>
+  </GRP>
+  <GRP ID="SOH2_1">
+    <FLD NAME="STOFCY" TYPE="Char">PT032</FLD>
+  </GRP>
+  <TAB DIM="1002" ID="SOH4_1" SIZE="2">
+    <LIN NUM="1">
+      <FLD NAME="NUMLIG" TYPE="Integer">0</FLD>
+      <FLD NAME="ITMREF" TYPE="Char">FIN003</FLD>
+      <FLD NAME="DSTOFCY" TYPE="Char">PT032</FLD>
+      <FLD NAME="QTY" TYPE="Decimal">10</FLD>
+    </LIN>
+    <LIN NUM="2">
+      <FLD NAME="NUMLIG" TYPE="Integer">0</FLD>
+      <FLD NAME="ITMREF" TYPE="Char">FIN002</FLD>
+      <FLD NAME="DSTOFCY" TYPE="Char">PT032</FLD>
+      <FLD NAME="QTY" TYPE="Decimal">10</FLD>
+      <FLD NAME="SAUSTUCOE" TYPE="Decimal">1</FLD>
+    </LIN>
+  </TAB>
+</PARAM>

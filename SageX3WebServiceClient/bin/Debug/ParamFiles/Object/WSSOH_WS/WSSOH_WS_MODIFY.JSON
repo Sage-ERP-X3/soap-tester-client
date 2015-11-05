@@ -1,0 +1,16 @@
+{
+  "SOH0_1": {
+    "CUSORDREF": "MODIFIED BY WS",
+  },
+  "SOH4_1": [
+    {
+      "QTY": "20",
+    },
+    {
+      "NUMLIG": "0",
+      "ITMREF": "FIN005",
+      "DSTOFCY": "PT032",
+      "QTY": "10",
+    }
+  ],
+}

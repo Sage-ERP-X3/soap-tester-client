@@ -1,0 +1,252 @@
+{
+  "GRP1": {
+    "NBBPC": "50"
+  },
+  "GRP2": [
+    {
+      "BPCNUM": "ZA001",
+      "BPCNAM": "",
+      "OSTAUZ": 0.0
+    },
+    {
+      "BPCNUM": "GB001",
+      "BPCNAM": "",
+      "OSTAUZ": 0.0
+    },
+    {
+      "BPCNUM": "PT001",
+      "BPCNAM": "",
+      "OSTAUZ": 0.0
+    },
+    {
+      "BPCNUM": "APA01",
+      "BPCNAM": "",
+      "OSTAUZ": 0.0
+    },
+    {
+      "BPCNUM": "TEST",
+      "BPCNAM": "",
+      "OSTAUZ": 0.0
+    },
+    {
+      "BPCNUM": "NZ001",
+      "BPCNAM": "",
+      "OSTAUZ": 0.0
+    },
+    {
+      "BPCNUM": "GB001",
+      "BPCNAM": "",
+      "OSTAUZ": 0.0
+    },
+    {
+      "BPCNUM": "SPA01",
+      "BPCNAM": "",
+      "OSTAUZ": 0.0
+    },
+    {
+      "BPCNUM": "NA001",
+      "BPCNAM": "",
+      "OSTAUZ": 0.0
+    },
+    {
+      "BPCNUM": "ES001",
+      "BPCNAM": "",
+      "OSTAUZ": 0.0
+    },
+    {
+      "BPCNUM": "ZA005",
+      "BPCNAM": "",
+      "OSTAUZ": 0.0
+    },
+    {
+      "BPCNUM": "GB005",
+      "BPCNAM": "",
+      "OSTAUZ": 0.0
+    },
+    {
+      "BPCNUM": "PT005",
+      "BPCNAM": "",
+      "OSTAUZ": 0.0
+    },
+    {
+      "BPCNUM": "APA01",
+      "BPCNAM": "",
+      "OSTAUZ": 0.0
+    },
+    {
+      "BPCNUM": "AA01",
+      "BPCNAM": "",
+      "OSTAUZ": 0.0
+    },
+    {
+      "BPCNUM": "NZ005",
+      "BPCNAM": "",
+      "OSTAUZ": 0.0
+    },
+    {
+      "BPCNUM": "GB005",
+      "BPCNAM": "",
+      "OSTAUZ": 0.0
+    },
+    {
+      "BPCNUM": "SPA01",
+      "BPCNAM": "",
+      "OSTAUZ": 0.0
+    },
+    {
+      "BPCNUM": "NA005",
+      "BPCNAM": "",
+      "OSTAUZ": 0.0
+    },
+    {
+      "BPCNUM": "ES005",
+      "BPCNAM": "",
+      "OSTAUZ": 0.0
+    },
+    {
+      "BPCNUM": "ZA004",
+      "BPCNAM": "",
+      "OSTAUZ": 0.0
+    },
+    {
+      "BPCNUM": "PT004",
+      "BPCNAM": "",
+      "OSTAUZ": 0.0
+    },
+    {
+      "BPCNUM": "NZ004",
+      "BPCNAM": "",
+      "OSTAUZ": 0.0
+    },
+    {
+      "BPCNUM": "NA004",
+      "BPCNAM": "",
+      "OSTAUZ": 0.0
+    },
+    {
+      "BPCNUM": "GB004",
+      "BPCNAM": "",
+      "OSTAUZ": 0.0
+    },
+    {
+      "BPCNUM": "FR001",
+      "BPCNAM": "",
+      "OSTAUZ": 0.0
+    },
+    {
+      "BPCNUM": "ES004",
+      "BPCNAM": "",
+      "OSTAUZ": 0.0
+    },
+    {
+      "BPCNUM": "DE004",
+      "BPCNAM": "",
+      "OSTAUZ": 0.0
+    },
+    {
+      "BPCNUM": "AU004",
+      "BPCNAM": "",
+      "OSTAUZ": 0.0
+    },
+    {
+      "BPCNUM": "",
+      "BPCNAM": "",
+      "OSTAUZ": 0.0
+    },
+    {
+      "BPCNUM": "ZA004",
+      "BPCNAM": "",
+      "OSTAUZ": 0.0
+    },
+    {
+      "BPCNUM": "PT003",
+      "BPCNAM": "",
+      "OSTAUZ": 0.0
+    },
+    {
+      "BPCNUM": "NZ003",
+      "BPCNAM": "Smart Computers",
+      "OSTAUZ": 0.0
+    },
+    {
+      "BPCNUM": "NA003",
+      "BPCNAM": "",
+      "OSTAUZ": 0.0
+    },
+    {
+      "BPCNUM": "GB003",
+      "BPCNAM": "",
+      "OSTAUZ": 0.0
+    },
+    {
+      "BPCNUM": "FR003",
+      "BPCNAM": "",
+      "OSTAUZ": 0.0
+    },
+    {
+      "BPCNUM": "ES003",
+      "BPCNAM": "",
+      "OSTAUZ": 0.0
+    },
+    {
+      "BPCNUM": "DE003",
+      "BPCNAM": "",
+      "OSTAUZ": 0.0
+    },
+    {
+      "BPCNUM": "AU003",
+      "BPCNAM": "",
+      "OSTAUZ": 0.0
+    },
+    {
+      "BPCNUM": "",
+      "BPCNAM": "",
+      "OSTAUZ": 0.0
+    },
+    {
+      "BPCNUM": "ZA006",
+      "BPCNAM": "",
+      "OSTAUZ": 0.0
+    },
+    {
+      "BPCNUM": "PT006",
+      "BPCNAM": "",
+      "OSTAUZ": 0.0
+    },
+    {
+      "BPCNUM": "NZ006",
+      "BPCNAM": "",
+      "OSTAUZ": 0.0
+    },
+    {
+      "BPCNUM": "NA006",
+      "BPCNAM": "",
+      "OSTAUZ": 0.0
+    },
+    {
+      "BPCNUM": "GB006",
+      "BPCNAM": "",
+      "OSTAUZ": 0.0
+    },
+    {
+      "BPCNUM": "FR006",
+      "BPCNAM": "",
+      "OSTAUZ": 0.0
+    },
+    {
+      "BPCNUM": "ES006",
+      "BPCNAM": "",
+      "OSTAUZ": 0.0
+    },
+    {
+      "BPCNUM": "DE006",
+      "BPCNAM": "",
+      "OSTAUZ": 0.0
+    },
+    {
+      "BPCNUM": "AU006",
+      "BPCNAM": "",
+      "OSTAUZ": 0.0
+    }
+  ]
+}

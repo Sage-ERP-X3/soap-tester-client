@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PARAM>
+  <GRP ID="GRP1" >
+    <FLD NAME="NBBPC">50</FLD>
+  </GRP>
+  <TAB DIM="0" ID="GRP2" SIZE="2">
+    <LIN NUM="1">
+        <FLD NAME="BPCNUM" TYPE="Char">ZA001</FLD>
+        <FLD NAME="BPCNAM" TYPE="Char"></FLD>
+        <FLD NAME="OSTAUZ" TYPE="Decimal">0.0</FLD>
+    </LIN>
+    <LIN NUM="2">
+        <FLD NAME="BPCNUM" TYPE="Char">GB001</FLD>
+        <FLD NAME="BPCNAM" TYPE="Char"></FLD>
+        <FLD NAME="OSTAUZ" TYPE="Decimal">0.0</FLD>
+    </LIN>
+    <LIN NUM="3">
+        <FLD NAME="BPCNUM" TYPE="Char">PT001</FLD>
+        <FLD NAME="BPCNAM" TYPE="Char"></FLD>
+        <FLD NAME="OSTAUZ" TYPE="Decimal">0.0</FLD>
+    </LIN>
+    <LIN NUM="4">
+        <FLD NAME="BPCNUM" TYPE="Char">APA01</FLD>
+        <FLD NAME="BPCNAM" TYPE="Char"></FLD>
+        <FLD NAME="OSTAUZ" TYPE="Decimal">0.0</FLD>
+    </LIN>
+    <LIN NUM="5">
+        <FLD NAME="BPCNUM" TYPE="Char">TEST</FLD>
+        <FLD NAME="BPCNAM" TYPE="Char"></FLD>
+        <FLD NAME="OSTAUZ" TYPE="Decimal">0.0</FLD>
+    </LIN>
+    <LIN NUM="6">
+        <FLD NAME="BPCNUM" TYPE="Char">NZ001</FLD>
+        <FLD NAME="BPCNAM" TYPE="Char"></FLD>
+        <FLD NAME="OSTAUZ" TYPE="Decimal">0.0</FLD>
+    </LIN>
+    <LIN NUM="7">
+        <FLD NAME="BPCNUM" TYPE="Char">GB001</FLD>
+        <FLD NAME="BPCNAM" TYPE="Char"></FLD>
+        <FLD NAME="OSTAUZ" TYPE="Decimal">0.0</FLD>
+    </LIN>
+    <LIN NUM="8">
+        <FLD NAME="BPCNUM" TYPE="Char">SPA01</FLD>
+        <FLD NAME="BPCNAM" TYPE="Char"></FLD>
+        <FLD NAME="OSTAUZ" TYPE="Decimal">0.0</FLD>
+    </LIN>
+    <LIN NUM="9">
+        <FLD NAME="BPCNUM" TYPE="Char">NA001</FLD>
+        <FLD NAME="BPCNAM" TYPE="Char"></FLD>
+        <FLD NAME="OSTAUZ" TYPE="Decimal">0.0</FLD>
+    </LIN>
+    <LIN NUM="10">
+        <FLD NAME="BPCNUM" TYPE="Char">ES001</FLD>
+        <FLD NAME="BPCNAM" TYPE="Char"></FLD>
+        <FLD NAME="OSTAUZ" TYPE="Decimal">0.0</FLD>
+    </LIN>
+    <LIN NUM="11">
+        <FLD NAME="BPCNUM" TYPE="Char">ZA005</FLD>
+        <FLD NAME="BPCNAM" TYPE="Char"></FLD>
+        <FLD NAME="OSTAUZ" TYPE="Decimal">0.0</FLD>
+    </LIN>
+    <LIN NUM="12">
+        <FLD NAME="BPCNUM" TYPE="Char">GB005</FLD>
+        <FLD NAME="BPCNAM" TYPE="Char"></FLD>
+        <FLD NAME="OSTAUZ" TYPE="Decimal">0.0</FLD>
+    </LIN>
+    <LIN NUM="13">
+        <FLD NAME="BPCNUM" TYPE="Char">PT005</FLD>
+        <FLD NAME="BPCNAM" TYPE="Char"></FLD>
+        <FLD NAME="OSTAUZ" TYPE="Decimal">0.0</FLD>
+    </LIN>
+    <LIN NUM="14">
+        <FLD NAME="BPCNUM" TYPE="Char">APA01</FLD>
+        <FLD NAME="BPCNAM" TYPE="Char"></FLD>
+        <FLD NAME="OSTAUZ" TYPE="Decimal">0.0</FLD>
+    </LIN>
+    <LIN NUM="15">
+        <FLD NAME="BPCNUM" TYPE="Char">AA01</FLD>
+        <FLD NAME="BPCNAM" TYPE="Char"></FLD>
+        <FLD NAME="OSTAUZ" TYPE="Decimal">0.0</FLD>
+    </LIN>
+    <LIN NUM="16">
+        <FLD NAME="BPCNUM" TYPE="Char">NZ005</FLD>
+        <FLD NAME="BPCNAM" TYPE="Char"></FLD>
+        <FLD NAME="OSTAUZ" TYPE="Decimal">0.0</FLD>
+    </LIN>
+    <LIN NUM="17">
+        <FLD NAME="BPCNUM" TYPE="Char">GB005</FLD>
+        <FLD NAME="BPCNAM" TYPE="Char"></FLD>
+        <FLD NAME="OSTAUZ" TYPE="Decimal">0.0</FLD>
+    </LIN>
+    <LIN NUM="18">
+        <FLD NAME="BPCNUM" TYPE="Char">SPA01</FLD>
+        <FLD NAME="BPCNAM" TYPE="Char"></FLD>
+        <FLD NAME="OSTAUZ" TYPE="Decimal">0.0</FLD>
+    </LIN>
+    <LIN NUM="19">
+        <FLD NAME="BPCNUM" TYPE="Char">NA005</FLD>
+        <FLD NAME="BPCNAM" TYPE="Char"></FLD>
+        <FLD NAME="OSTAUZ" TYPE="Decimal">0.0</FLD>
+    </LIN>
+    <LIN NUM="20">
+        <FLD NAME="BPCNUM" TYPE="Char">ES005</FLD>
+        <FLD NAME="BPCNAM" TYPE="Char"></FLD>
+        <FLD NAME="OSTAUZ" TYPE="Decimal">0.0</FLD>
+    </LIN>
+    <LIN NUM="21">
+        <FLD NAME="BPCNUM" TYPE="Char">ZA004</FLD>
+        <FLD NAME="BPCNAM" TYPE="Char"></FLD>
+        <FLD NAME="OSTAUZ" TYPE="Decimal">0.0</FLD>
+    </LIN>
+    <LIN NUM="22">
+        <FLD NAME="BPCNUM" TYPE="Char">PT004</FLD>
+        <FLD NAME="BPCNAM" TYPE="Char"></FLD>
+        <FLD NAME="OSTAUZ" TYPE="Decimal">0.0</FLD>
+    </LIN>
+    <LIN NUM="23">
+        <FLD NAME="BPCNUM" TYPE="Char">NZ004</FLD>
+        <FLD NAME="BPCNAM" TYPE="Char"></FLD>
+        <FLD NAME="OSTAUZ" TYPE="Decimal">0.0</FLD>
+    </LIN>
+    <LIN NUM="24">
+        <FLD NAME="BPCNUM" TYPE="Char">NA004</FLD>
+        <FLD NAME="BPCNAM" TYPE="Char"></FLD>
+        <FLD NAME="OSTAUZ" TYPE="Decimal">0.0</FLD>
+    </LIN>
+    <LIN NUM="25">
+        <FLD NAME="BPCNUM" TYPE="Char">GB004</FLD>
+        <FLD NAME="BPCNAM" TYPE="Char"></FLD>
+        <FLD NAME="OSTAUZ" TYPE="Decimal">0.0</FLD>
+    </LIN>
+    <LIN NUM="26">
+        <FLD NAME="BPCNUM" TYPE="Char">FR001</FLD>
+        <FLD NAME="BPCNAM" TYPE="Char"></FLD>
+        <FLD NAME="OSTAUZ" TYPE="Decimal">0.0</FLD>
+    </LIN>
+    <LIN NUM="27">
+        <FLD NAME="BPCNUM" TYPE="Char">ES004</FLD>
+        <FLD NAME="BPCNAM" TYPE="Char"></FLD>
+        <FLD NAME="OSTAUZ" TYPE="Decimal">0.0</FLD>
+    </LIN>
+    <LIN NUM="28">
+        <FLD NAME="BPCNUM" TYPE="Char">DE004</FLD>
+        <FLD NAME="BPCNAM" TYPE="Char"></FLD>
+        <FLD NAME="OSTAUZ" TYPE="Decimal">0.0</FLD>
+    </LIN>
+    <LIN NUM="29">
+        <FLD NAME="BPCNUM" TYPE="Char">AU004</FLD>
+        <FLD NAME="BPCNAM" TYPE="Char"></FLD>
+        <FLD NAME="OSTAUZ" TYPE="Decimal">0.0</FLD>
+    </LIN>
+    <LIN NUM="31">
+        <FLD NAME="BPCNUM" TYPE="Char">ZA004</FLD>
+        <FLD NAME="BPCNAM" TYPE="Char"></FLD>
+        <FLD NAME="OSTAUZ" TYPE="Decimal">0.0</FLD>
+    </LIN>
+    <LIN NUM="32">
+        <FLD NAME="BPCNUM" TYPE="Char">PT003</FLD>
+        <FLD NAME="BPCNAM" TYPE="Char"></FLD>
+        <FLD NAME="OSTAUZ" TYPE="Decimal">0.0</FLD>
+    </LIN>
+    <LIN NUM="33">
+        <FLD NAME="BPCNUM" TYPE="Char">NZ003</FLD>
+        <FLD NAME="BPCNAM" TYPE="Char"></FLD>
+        <FLD NAME="OSTAUZ" TYPE="Decimal">0.0</FLD>
+    </LIN>
+    <LIN NUM="34">
+        <FLD NAME="BPCNUM" TYPE="Char">NA003</FLD>
+        <FLD NAME="BPCNAM" TYPE="Char"></FLD>
+        <FLD NAME="OSTAUZ" TYPE="Decimal">0.0</FLD>
+    </LIN>
+    <LIN NUM="35">
+        <FLD NAME="BPCNUM" TYPE="Char">GB003</FLD>
+        <FLD NAME="BPCNAM" TYPE="Char"></FLD>
+        <FLD NAME="OSTAUZ" TYPE="Decimal">0.0</FLD>
+    </LIN>
+    <LIN NUM="36">
+        <FLD NAME="BPCNUM" TYPE="Char">FR003</FLD>
+        <FLD NAME="BPCNAM" TYPE="Char"></FLD>
+        <FLD NAME="OSTAUZ" TYPE="Decimal">0.0</FLD>
+    </LIN>
+    <LIN NUM="37">
+        <FLD NAME="BPCNUM" TYPE="Char">ES003</FLD>
+        <FLD NAME="BPCNAM" TYPE="Char"></FLD>
+        <FLD NAME="OSTAUZ" TYPE="Decimal">0.0</FLD>
+    </LIN>
+    <LIN NUM="38">
+        <FLD NAME="BPCNUM" TYPE="Char">DE003</FLD>
+        <FLD NAME="BPCNAM" TYPE="Char"></FLD>
+        <FLD NAME="OSTAUZ" TYPE="Decimal">0.0</FLD>
+    </LIN>
+    <LIN NUM="39">
+        <FLD NAME="BPCNUM" TYPE="Char">AU003</FLD>
+        <FLD NAME="BPCNAM" TYPE="Char"></FLD>
+        <FLD NAME="OSTAUZ" TYPE="Decimal">0.0</FLD>
+    </LIN>
+    <LIN NUM="41">
+        <FLD NAME="BPCNUM" TYPE="Char">ZA006</FLD>
+        <FLD NAME="BPCNAM" TYPE="Char"></FLD>
+        <FLD NAME="OSTAUZ" TYPE="Decimal">0.0</FLD>
+    </LIN>
+    <LIN NUM="42">
+        <FLD NAME="BPCNUM" TYPE="Char">PT006</FLD>
+        <FLD NAME="BPCNAM" TYPE="Char"></FLD>
+        <FLD NAME="OSTAUZ" TYPE="Decimal">0.0</FLD>
+    </LIN>
+    <LIN NUM="43">
+        <FLD NAME="BPCNUM" TYPE="Char">NZ006</FLD>
+        <FLD NAME="BPCNAM" TYPE="Char"></FLD>
+        <FLD NAME="OSTAUZ" TYPE="Decimal">0.0</FLD>
+    </LIN>
+    <LIN NUM="44">
+        <FLD NAME="BPCNUM" TYPE="Char">NA006</FLD>
+        <FLD NAME="BPCNAM" TYPE="Char"></FLD>
+        <FLD NAME="OSTAUZ" TYPE="Decimal">0.0</FLD>
+    </LIN>
+    <LIN NUM="45">
+        <FLD NAME="BPCNUM" TYPE="Char">GB006</FLD>
+        <FLD NAME="BPCNAM" TYPE="Char"></FLD>
+        <FLD NAME="OSTAUZ" TYPE="Decimal">0.0</FLD>
+    </LIN>
+    <LIN NUM="46">
+        <FLD NAME="BPCNUM" TYPE="Char">FR006</FLD>
+        <FLD NAME="BPCNAM" TYPE="Char"></FLD>
+        <FLD NAME="OSTAUZ" TYPE="Decimal">0.0</FLD>
+    </LIN>
+    <LIN NUM="47">
+        <FLD NAME="BPCNUM" TYPE="Char">ES006</FLD>
+        <FLD NAME="BPCNAM" TYPE="Char"></FLD>
+        <FLD NAME="OSTAUZ" TYPE="Decimal">0.0</FLD>
+    </LIN>
+    <LIN NUM="48">
+        <FLD NAME="BPCNUM" TYPE="Char">DE006</FLD>
+        <FLD NAME="BPCNAM" TYPE="Char"></FLD>
+        <FLD NAME="OSTAUZ" TYPE="Decimal">0.0</FLD>
+    </LIN>
+    <LIN NUM="49">
+        <FLD NAME="BPCNUM" TYPE="Char">AU006</FLD>
+        <FLD NAME="BPCNAM" TYPE="Char"></FLD>
+        <FLD NAME="OSTAUZ" TYPE="Decimal">0.0</FLD>
+    </LIN>
+
+  </TAB>
+</PARAM>

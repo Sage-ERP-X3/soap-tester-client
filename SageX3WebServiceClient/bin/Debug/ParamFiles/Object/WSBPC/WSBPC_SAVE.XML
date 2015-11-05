@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PARAM>
+  <GRP ID="BPC0_1">
+    <FLD NAME="BCGCOD" TYPE="Char">US</FLD>
+    <FLD NAME="ZBCGCOD" TYPE="Char">North American customers</FLD>
+    <FLD MENULAB="Yes" MENULOCAL="1" NAME="BPCSTA" TYPE="Integer">2</FLD>
+    <FLD NAME="BPCNUM" TYPE="Char">WSBPC</FLD>
+    <FLD NAME="BPCNAM" TYPE="Char">Customer created through WS</FLD>
+  </GRP>
+  <GRP ID="BPRC_1">
+    <FLD NAME="BPRSHO" TYPE="Char">WSBPC</FLD>
+    <FLD NAME="BPRLOG" TYPE="Char">WSBPC</FLD>
+    <LST NAME="BPRNAM" SIZE="2" TYPE="Char">
+      <ITM>Customer created through WS</ITM>
+      <ITM>Company name created through WS</ITM>
+    </LST>
+    <FLD MENULAB="No" MENULOCAL="1" NAME="LEGETT" TYPE="Integer">1</FLD>
+    <FLD NAME="CRY" TYPE="Char">US</FLD>
+    <FLD NAME="ZCRY" TYPE="Char">United States of America</FLD>
+    <FLD NAME="LAN" TYPE="Char">ENG</FLD>
+    <FLD NAME="ZLAN" TYPE="Char">English - American</FLD>
+    <FLD NAME="CRN" TYPE="Char">Site Tax ID no</FLD>
+    <FLD NAME="NAF" TYPE="Char">SIC code</FLD>
+    <FLD NAME="CUR" TYPE="Char">USD</FLD>
+    <FLD NAME="ZCUR" TYPE="Char">US Dollar</FLD>
+    <FLD MENULAB="No" MENULOCAL="1" NAME="BPRFBDMAG" TYPE="Integer">1</FLD>
+  </GRP>
+  <GRP ID="BPC3_2">
+    <FLD NAME="VACBPR" TYPE="Char">NT</FLD>
+    <FLD NAME="ZVACBPR" TYPE="Char">Sage Sales Tax</FLD>
+    <FLD NAME="VATEXN" TYPE="Char" />
+  </GRP>
+  <TAB DIM="30" ID="BPAC_1" SIZE="2">
+    <LIN NUM="1">
+      <FLD NAME="CODADR" TYPE="Char">ALTE</FLD>
+      <FLD NAME="BPADES" TYPE="Char">Alternate address from WS</FLD>
+      <FLD NAME="BPACRY" TYPE="Char">US</FLD>
+      <FLD NAME="CRYNAM" TYPE="Char">United States of America</FLD>
+      <FLD NAME="ADDLIG1" TYPE="Char">Alte Address 1</FLD>
+      <FLD NAME="ADDLIG2" TYPE="Char">Alte Address 2</FLD>
+      <FLD NAME="ADDLIG3" TYPE="Char">Alte Address 3</FLD>
+      <FLD NAME="POSCOD" TYPE="Char">94582</FLD>
+      <FLD NAME="CTY" TYPE="Char">San Ramon</FLD>
+      <FLD NAME="SAT" TYPE="Char">CA</FLD>
+      <FLD NAME="TEL1" TYPE="Char" />
+      <FLD NAME="TEL2" TYPE="Char" />
+      <FLD NAME="TEL3" TYPE="Char" />
+      <FLD NAME="TEL4" TYPE="Char" />
+      <FLD NAME="TEL5" TYPE="Char" />
+      <FLD NAME="WEB1" TYPE="Char" />
+      <FLD NAME="WEB2" TYPE="Char" />
+      <FLD NAME="WEB3" TYPE="Char" />
+      <FLD NAME="WEB4" TYPE="Char" />
+      <FLD NAME="WEB5" TYPE="Char" />
+      <FLD NAME="FCYWEB" TYPE="Char" />
+      <FLD NAME="EXTNUM" TYPE="Char" />
+      <FLD MENULAB="No" MENULOCAL="1" NAME="BPAADDFLG" TYPE="Integer">1</FLD>
+      <FLD NAME="FLMOD" TYPE="Integer">0</FLD>
+      <FLD MENULAB="No" MENULOCAL="1" NAME="ADRVAL" TYPE="Integer">1</FLD>
+      <FLD NAME="FLMODFONC" TYPE="Integer">0</FLD>
+    </LIN>
+    <LIN NUM="2">
+      <FLD NAME="CODADR" TYPE="Char">MAIN</FLD>
+      <FLD NAME="BPADES" TYPE="Char">Main address created by WS</FLD>
+      <FLD NAME="BPACRY" TYPE="Char">US</FLD>
+      <FLD NAME="CRYNAM" TYPE="Char">United States of America</FLD>
+      <FLD NAME="ADDLIG1" TYPE="Char">Main address 1 created by WS</FLD>
+      <FLD NAME="ADDLIG2" TYPE="Char">Main address 2 created by WS</FLD>
+      <FLD NAME="ADDLIG3" TYPE="Char">Main address 3 created by WS</FLD>
+      <FLD NAME="POSCOD" TYPE="Char">95402</FLD>
+      <FLD NAME="CTY" TYPE="Char">Santa Rosa</FLD>
+      <FLD NAME="SAT" TYPE="Char">CA</FLD>
+      <FLD NAME="TEL1" TYPE="Char" />
+      <FLD NAME="TEL2" TYPE="Char" />
+      <FLD NAME="TEL3" TYPE="Char" />
+      <FLD NAME="TEL4" TYPE="Char" />
+      <FLD NAME="TEL5" TYPE="Char" />
+      <FLD NAME="WEB1" TYPE="Char" />
+      <FLD NAME="WEB2" TYPE="Char" />
+      <FLD NAME="WEB3" TYPE="Char" />
+      <FLD NAME="WEB4" TYPE="Char" />
+      <FLD NAME="WEB5" TYPE="Char" />
+      <FLD NAME="FCYWEB" TYPE="Char" />
+      <FLD NAME="EXTNUM" TYPE="Char" />
+      <FLD MENULAB="Yes" MENULOCAL="1" NAME="BPAADDFLG" TYPE="Integer">2</FLD>
+      <FLD NAME="FLMOD" TYPE="Integer">0</FLD>
+      <FLD MENULAB="No" MENULOCAL="1" NAME="ADRVAL" TYPE="Integer">1</FLD>
+      <FLD NAME="FLMODFONC" TYPE="Integer">0</FLD>
+    </LIN>
+  </TAB>
+</PARAM>

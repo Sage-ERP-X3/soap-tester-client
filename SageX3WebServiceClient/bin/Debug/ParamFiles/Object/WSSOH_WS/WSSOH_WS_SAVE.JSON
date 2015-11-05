@@ -1,0 +1,27 @@
+{
+  "SOH0_1": {
+    "SALFCY": "PT032",
+    "SOHTYP": "WS",
+    "SOHNUM": "WSSOH",
+    "CUSORDREF": "CREATED BY WS",
+    "BPCORD": "PT001",
+  },
+  "SOH2_1": {
+    "STOFCY": "PT032",
+  },
+  "SOH4_1": [
+    {
+      "NUMLIG": "0",
+      "ITMREF": "FIN003",
+      "DSTOFCY": "PT032",
+      "QTY": "10",
+    },
+    {
+      "NUMLIG": "0",
+      "ITMREF": "FIN002",
+      "DSTOFCY": "PT032",
+      "QTY": "10",
+      "SAUSTUCOE": "1",
+    }
+  ],
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PARAM>
+  <GRP ID="BPC0_1">
+    <FLD NAME="BPCNAM" TYPE="Char">Customer modified by WS</FLD>
+  </GRP>
+  <GRP ID="BPRC_1">
+    <LST NAME="BPRNAM" SIZE="2" TYPE="Char">
+      <ITM>Customer modified through WS</ITM>
+      <ITM>Company modified through WS</ITM>
+    </LST>
+  </GRP>
+  <TAB DIM="30" ID="BPAC_1" SIZE="3">
+    <LIN NUM="1">
+      <FLD NAME="BPADES" TYPE="Char">Main address modified by WS</FLD>
+      <FLD NAME="ADDLIG1" TYPE="Char">Main address 1 modified by WS</FLD>
+      <FLD NAME="ADDLIG2" TYPE="Char">Main address 2 modified by WS</FLD>
+      <FLD NAME="ADDLIG3" TYPE="Char">Main address 3 modified by WS</FLD>
+    </LIN>
+  </TAB>
+</PARAM>

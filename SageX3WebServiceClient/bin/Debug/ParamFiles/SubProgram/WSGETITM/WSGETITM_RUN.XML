@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PARAM>
+  <GRP ID="GRP1" >
+    <FLD NAME="ITM" >BMS008</FLD>
+    <FLD NAME="PRI" >0</FLD>
+  </GRP>
+</PARAM>

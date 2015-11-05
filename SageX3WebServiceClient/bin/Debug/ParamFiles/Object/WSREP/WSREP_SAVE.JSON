@@ -1,0 +1,37 @@
+{
+  "REP0_1": {
+    "REPNUM": "WSREP",
+  },
+  "BPRR_1": {
+    "BPRSHO": "WSREP",
+    "BPRNAM": [
+      "WS rep company1 created through WS",
+      "WS rep company2 created through WS"
+    ],
+  },
+  "BPAR_1": [
+    {
+      "CODADR": "ALTE",
+      "BPADES": "Alternate address",
+      "BPACRY": "US",
+      "CRYNAM": "United States of America",
+      "ADDLIG1": "Alt addr1 created through WS",
+      "ADDLIG2": "Alt addr2 created through WS",
+      "ADDLIG3": "Alt addr3 created through WS",
+      "POSCOD": "95401",
+      "BPAADDFLG": "1",
+    },
+    {
+      "CODADR": "MAIN",
+      "BPADES": "Main Title",
+      "BPACRY": "US",
+      "CRYNAM": "United States of America",
+      "ADDLIG1": "Main Address1 create through WS",
+      "ADDLIG2": "Main Address2 create through WS",
+      "ADDLIG3": "Main Address3 create through WS",
+      "POSCOD": "94582",
+      "BPAADDFLG": "2",
+    }
+  ],
+
+}

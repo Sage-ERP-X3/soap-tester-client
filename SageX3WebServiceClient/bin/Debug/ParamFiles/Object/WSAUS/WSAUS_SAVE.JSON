@@ -1,0 +1,72 @@
+{
+  "AUS0_1": {
+    "USR": "WSTST",
+    "INTUSR": "User created by WS",
+    "ENAFLG_LBL": "Yes"
+  },
+  "AUS1_1": {
+    "USRCONNECT": "2",
+    "USRCONXTD": "2",
+    "WITHOUTLDAP": "1",
+    "LOGIN": "WSTST",
+    "CODMET": "",
+    "ZCODMET": "",
+    "WRH": "",
+    "PRFMEN": "ADMIN",
+    "ZPRFMEN": "System administrator ",
+    "DEFMEN": "",
+    "PRFFCT": "ADMIN",
+    "ZPRFFCT": "System administrator",
+    "DEFFCT": "",
+    "ARCPRF": "",
+    "ZARCPRF": "",
+    "PRFXTD": "",
+    "DEFXTD": "",
+    "ADDEML": "created@sageerpx3.com",
+    "TELEP": "",
+    "FAX1": "",
+    "ACSUSR": "",
+    "USRPRT": ""
+  },
+  "AUS2_1": [
+    {
+      "CODADR": "MAIN",
+      "BPADES": "Main Address Created by WS",
+      "BPACRY": "US",
+      "CRYNAM": "United States of America",
+      "ADDLIG1": "Main Address1 Created by WS",
+      "ADDLIG2": "Main Address2 Created by WS",
+      "ADDLIG3": "Main Address3Created by WS",
+      "POSCOD": "90501",
+      "CTY": "Torrance",
+      "SAT": "CA",
+      "TEL1": "",
+      "TEL2": "",
+      "TEL3": "",
+      "TEL4": "",
+      "TEL5": "",
+      "WEB1": "created@sageerpx3.com",
+      "WEB2": "",
+      "WEB3": "",
+      "WEB4": "",
+      "WEB5": "",
+      "FCYWEB": "",
+      "EXTNUM": "",
+      "BPAADDFLG": "2",
+      "FLMOD": "0"
+    },
+    {
+      "CODADR": "ALTE",
+      "BPADES": "Second address",
+      "BPACRY": "US",
+      "CRYNAM": "United States of America",
+      "ADDLIG1": "Aberdale Circle",
+      "ADDLIG2": "Second Address 2",
+      "ADDLIG3": "Second Address 3",
+      "POSCOD": "94582",
+      "CTY": "San Ramon",
+      "SAT": "CA",
+      "WEB1": "created@sageerpx3.com"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PARAM>
+  <GRP ID="ITM0_1">
+    <FLD NAME="ZTCLCOD" TYPE="Char">Test modified by WS</FLD>
+    <FLD NAME="DES1AXX" TYPE="Char">Test modified by WS</FLD>
+  </GRP>
+  <GRP ID="ITM1_1">
+    <FLD NAME="DES2AXX" TYPE="Char">Test modified by WS</FLD>
+    <FLD NAME="DES3AXX" TYPE="Char">Test modified by WS</FLD>
+  </GRP>
+  <TAB DIM="4" ID="ITM3_2" SIZE="1">
+    <LIN NUM="1">
+      <FLD NAME="PCUSTUCOE" TYPE="Decimal">100</FLD>
+    </LIN>
+  </TAB>
+</PARAM>

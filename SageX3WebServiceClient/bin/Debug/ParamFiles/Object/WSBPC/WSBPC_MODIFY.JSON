@@ -1,0 +1,20 @@
+{
+  "BPC0_1": {
+    "BPCNAM": "Customer created through WS"
+  },
+  "BPRC_1": {
+    "BPRNAM": [
+      "Customer modified through WS",
+      "Company name modified through WS"
+    ],
+  },
+  "BPAC_1": [
+    {
+      "CODADR": "MAIN",
+      "BPADES": "Main address modified by WS",
+      "ADDLIG1": "Main address 1 modified by WS",
+      "ADDLIG2": "Main address 2 modified by WS",
+      "ADDLIG3": "Main address 3 modified by WS",
+    }
+  ],
+}

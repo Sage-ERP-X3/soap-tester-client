@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PARAM>
+  <GRP ID="REP0_1">
+    <FLD NAME="REPNUM" TYPE="Char">WSREP</FLD>
+  </GRP>
+  <GRP ID="BPRR_1">
+    <FLD NAME="BPRSHO" TYPE="Char">WSREP</FLD>
+    <LST NAME="BPRNAM" SIZE="2" TYPE="Char">
+      <ITM>WS rep company1 created through WS</ITM>
+      <ITM>WS rep company2 created through WS</ITM>
+    </LST>
+  </GRP>
+  <TAB DIM="30" ID="BPAR_1" SIZE="2">
+    <LIN NUM="1">
+      <FLD NAME="CODADR" TYPE="Char">ALTE</FLD>
+      <FLD NAME="BPADES" TYPE="Char">Alternate address</FLD>
+      <FLD NAME="BPACRY" TYPE="Char">US</FLD>
+      <FLD NAME="CRYNAM" TYPE="Char">United States of America</FLD>
+      <FLD NAME="ADDLIG1" TYPE="Char">Alt addr1 created through WS</FLD>
+      <FLD NAME="ADDLIG2" TYPE="Char">Alt addr2 created through WS</FLD>
+      <FLD NAME="ADDLIG3" TYPE="Char">Alt addr3 created through WS</FLD>
+      <FLD NAME="POSCOD" TYPE="Char">95401</FLD>
+      <FLD MENULAB="No" MENULOCAL="1" NAME="BPAADDFLG" TYPE="Integer">1</FLD>
+    </LIN>
+    <LIN NUM="2">
+      <FLD NAME="CODADR" TYPE="Char">MAIN</FLD>
+      <FLD NAME="BPADES" TYPE="Char">Main Title</FLD>
+      <FLD NAME="BPACRY" TYPE="Char">US</FLD>
+      <FLD NAME="CRYNAM" TYPE="Char">United States of America</FLD>
+      <FLD NAME="ADDLIG1" TYPE="Char">Main Address1 create through WS</FLD>
+      <FLD NAME="ADDLIG2" TYPE="Char">Main Address2 create through WS</FLD>
+      <FLD NAME="ADDLIG3" TYPE="Char">Main Address3 create through WS</FLD>
+      <FLD NAME="POSCOD" TYPE="Char">94582</FLD>
+      <FLD MENULAB="Yes" MENULOCAL="1" NAME="BPAADDFLG" TYPE="Integer">2</FLD>
+    </LIN>
+  </TAB>
+</PARAM>

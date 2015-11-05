@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PARAM>
+  <GRP ID="GRP1" >
+    <FLD NAME="BPCSTR">AU001</FLD>
+    <FLD NAME="BPCEND">AU005</FLD>
+    <FLD NAME="NBBPC">2</FLD>
+  </GRP>
+</PARAM>

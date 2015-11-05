@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PARAM>
+  <TAB DIM="1002" ID="SOH4_1" SIZE="2">
+    <LIN NUM="3">
+      <FLD NAME="NUMLIG" TYPE="Integer">0</FLD>
+      <FLD NAME="ITMREF" TYPE="Char">FIN006</FLD>
+      <FLD NAME="DSTOFCY" TYPE="Char">PT032</FLD>
+      <FLD NAME="QTY" TYPE="Decimal">10</FLD>
+    </LIN>
+  </TAB>
+</PARAM>

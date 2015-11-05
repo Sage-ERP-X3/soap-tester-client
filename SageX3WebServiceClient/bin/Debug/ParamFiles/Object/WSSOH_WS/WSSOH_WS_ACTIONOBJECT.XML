@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PARAM>
+  <GRP ID="SOH0_1">
+    <FLD NAME="BPCORD" TYPE="Char">ZA002</FLD>
+  </GRP>
+  <GRP ID="SOH2_1">
+    <FLD NAME="STOFCY" TYPE="Char">AO011</FLD>
+  </GRP>
+</PARAM>

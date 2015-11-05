@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SageX3SoapWsTester.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SageX3SoapWsTester_CAdxWebServiceXmlCC_CAdxWebServiceXmlCCService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://cai715099:8124/soap-generic/syracuse/collaboration/syracuse/CAdxWebServiceXmlCC</Value>
+    </Setting>
+    <Setting Name="SageX3WebServiceClient_CAdxWebServiceXmlCC_CAdxWebServiceXmlCCService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://cai715099:8124/soap-generic/syracuse/collaboration/syracuse/CAdxWebServiceXmlCC</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

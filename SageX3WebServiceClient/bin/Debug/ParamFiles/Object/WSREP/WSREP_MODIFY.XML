@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PARAM>
+  <GRP ID="BPRR_1">
+    <LST NAME="BPRNAM" SIZE="2" TYPE="Char">
+      <ITM>WS rep company1 modified through WS</ITM>
+      <ITM>WS rep company2 modified through WS</ITM>
+    </LST>
+  </GRP>
+  <TAB DIM="30" ID="BPAR_1" SIZE="1">
+    <LIN NUM="1">
+      <FLD NAME="ADDLIG1" TYPE="Char">Main Address1 modified through WS</FLD>
+      <FLD NAME="ADDLIG2" TYPE="Char">Main Address2 modified through WS</FLD>
+      <FLD NAME="ADDLIG3" TYPE="Char">Main Address3 modified through WS</FLD>
+      <FLD NAME="POSCOD" TYPE="Char">94501</FLD>
+      <FLD MENULAB="Yes" MENULOCAL="1" NAME="BPAADDFLG" TYPE="Integer">2</FLD>
+    </LIN>
+    <LIN NUM="2">
+      <FLD NAME="CODADR" TYPE="Char">ALTE</FLD>
+      <FLD NAME="BPADES" TYPE="Char">Alternate address</FLD>
+      <FLD NAME="BPACRY" TYPE="Char">US</FLD>
+      <FLD NAME="CRYNAM" TYPE="Char">United States of America</FLD>
+      <FLD NAME="ADDLIG1" TYPE="Char">Alt addr1 re-created through WS</FLD>
+      <FLD NAME="ADDLIG2" TYPE="Char">Alt addr2 re-created through WS</FLD>
+      <FLD NAME="ADDLIG3" TYPE="Char">Alt addr3 re-created through WS</FLD>
+      <FLD NAME="POSCOD" TYPE="Char">95402</FLD>
+      <FLD MENULAB="No" MENULOCAL="1" NAME="BPAADDFLG" TYPE="Integer">3</FLD>
+    </LIN>
+  </TAB>
+</PARAM>

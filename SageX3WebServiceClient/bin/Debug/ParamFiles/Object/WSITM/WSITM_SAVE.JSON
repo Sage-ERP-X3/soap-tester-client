@@ -1,0 +1,39 @@
+{
+  "ITM0_1": {
+    "TCLCOD": "BMSOL",
+    "ZTCLCOD": "Item by WS",
+    "ITMSTA": "1",
+    "ITMREF": "WSITM",
+    "DES1AXX": "Test product created by WS"
+  },
+  "ITM5_1": {
+    "ACCCOD": "FINPRODUCT",
+    "ZACCCOD": "Fin Goods",
+    "VACITM": [
+      "NT"
+    ],
+    "ZVACITM": [
+      "Sage Sales Tax"
+    ],
+  },
+  "ITM1_1": {
+    "DES2AXX": "Test product created by WS",
+    "DES3AXX": "Test product created by WS"
+  },
+  "ITM3_2": [
+    {
+      "PCU": "PAC",
+      "ZPCU": "Pac",
+      "PCUSTUCOE": "10",
+      "DACPCUCOE": "1",
+      "PCURUL": "1",
+    },
+    {
+      "PCU": "PAL",
+      "ZPCU": "Pallet",
+      "PCUSTUCOE": "40",
+      "DACPCUCOE": "1",
+      "PCURUL": "1",
+    }
+  ],
+}
