@@ -67,6 +67,8 @@
             this.lblCriteria = new System.Windows.Forms.Label();
             this.lblWebService = new System.Windows.Forms.Label();
             this.pnlSelection = new System.Windows.Forms.Panel();
+            this.rdbSubProgram = new System.Windows.Forms.RadioButton();
+            this.rdbObject = new System.Windows.Forms.RadioButton();
             this.lstMethods = new System.Windows.Forms.ListBox();
             this.cmbWebService = new System.Windows.Forms.ComboBox();
             this.lblMethods = new System.Windows.Forms.Label();
@@ -207,7 +209,7 @@
             this.tabResult.Location = new System.Drawing.Point(4, 22);
             this.tabResult.Name = "tabResult";
             this.tabResult.Padding = new System.Windows.Forms.Padding(3);
-            this.tabResult.Size = new System.Drawing.Size(589, 483);
+            this.tabResult.Size = new System.Drawing.Size(573, 485);
             this.tabResult.TabIndex = 1;
             this.tabResult.Text = "Results";
             this.tabResult.UseVisualStyleBackColor = true;
@@ -237,7 +239,7 @@
             this.txtResult.Multiline = true;
             this.txtResult.Name = "txtResult";
             this.txtResult.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtResult.Size = new System.Drawing.Size(573, 447);
+            this.txtResult.Size = new System.Drawing.Size(557, 449);
             this.txtResult.TabIndex = 68;
             this.txtResult.WordWrap = false;
             // 
@@ -268,7 +270,7 @@
             this.tabMsgRpt.Controls.Add(this.lnkMsgRep);
             this.tabMsgRpt.Location = new System.Drawing.Point(4, 22);
             this.tabMsgRpt.Name = "tabMsgRpt";
-            this.tabMsgRpt.Size = new System.Drawing.Size(589, 483);
+            this.tabMsgRpt.Size = new System.Drawing.Size(573, 485);
             this.tabMsgRpt.TabIndex = 3;
             this.tabMsgRpt.Text = "Message/Report";
             this.tabMsgRpt.UseVisualStyleBackColor = true;
@@ -286,7 +288,7 @@
             this.txtMsgRep.Multiline = true;
             this.txtMsgRep.Name = "txtMsgRep";
             this.txtMsgRep.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtMsgRep.Size = new System.Drawing.Size(573, 447);
+            this.txtMsgRep.Size = new System.Drawing.Size(557, 449);
             this.txtMsgRep.TabIndex = 71;
             this.txtMsgRep.WordWrap = false;
             // 
@@ -308,7 +310,7 @@
             this.tabTrace.Controls.Add(this.txtTrace);
             this.tabTrace.Location = new System.Drawing.Point(4, 22);
             this.tabTrace.Name = "tabTrace";
-            this.tabTrace.Size = new System.Drawing.Size(589, 483);
+            this.tabTrace.Size = new System.Drawing.Size(573, 485);
             this.tabTrace.TabIndex = 4;
             this.tabTrace.Text = "Trace";
             this.tabTrace.UseVisualStyleBackColor = true;
@@ -338,7 +340,7 @@
             this.txtTrace.Multiline = true;
             this.txtTrace.Name = "txtTrace";
             this.txtTrace.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtTrace.Size = new System.Drawing.Size(573, 447);
+            this.txtTrace.Size = new System.Drawing.Size(557, 449);
             this.txtTrace.TabIndex = 66;
             this.txtTrace.WordWrap = false;
             // 
@@ -556,6 +558,8 @@
             // pnlSelection
             // 
             this.pnlSelection.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlSelection.Controls.Add(this.rdbSubProgram);
+            this.pnlSelection.Controls.Add(this.rdbObject);
             this.pnlSelection.Controls.Add(this.lstMethods);
             this.pnlSelection.Controls.Add(this.cmbWebService);
             this.pnlSelection.Controls.Add(this.lblMethods);
@@ -566,15 +570,39 @@
             this.pnlSelection.Size = new System.Drawing.Size(144, 240);
             this.pnlSelection.TabIndex = 4;
             // 
+            // rdbSubProgram
+            // 
+            this.rdbSubProgram.AutoSize = true;
+            this.rdbSubProgram.Location = new System.Drawing.Point(61, 6);
+            this.rdbSubProgram.Name = "rdbSubProgram";
+            this.rdbSubProgram.Size = new System.Drawing.Size(69, 17);
+            this.rdbSubProgram.TabIndex = 29;
+            this.rdbSubProgram.TabStop = true;
+            this.rdbSubProgram.Text = "Sub-Prog";
+            this.rdbSubProgram.UseVisualStyleBackColor = true;
+            this.rdbSubProgram.CheckedChanged += new System.EventHandler(this.rdbSubProgram_CheckedChanged);
+            // 
+            // rdbObject
+            // 
+            this.rdbObject.AutoSize = true;
+            this.rdbObject.Location = new System.Drawing.Point(5, 6);
+            this.rdbObject.Name = "rdbObject";
+            this.rdbObject.Size = new System.Drawing.Size(56, 17);
+            this.rdbObject.TabIndex = 28;
+            this.rdbObject.TabStop = true;
+            this.rdbObject.Text = "Object";
+            this.rdbObject.UseVisualStyleBackColor = true;
+            this.rdbObject.CheckedChanged += new System.EventHandler(this.rdbObject_CheckedChanged);
+            // 
             // lstMethods
             // 
             this.lstMethods.FormattingEnabled = true;
             this.lstMethods.Items.AddRange(new object[] {
             "getDescription",
             "getDataXmlSchema"});
-            this.lstMethods.Location = new System.Drawing.Point(7, 71);
+            this.lstMethods.Location = new System.Drawing.Point(8, 95);
             this.lstMethods.Name = "lstMethods";
-            this.lstMethods.Size = new System.Drawing.Size(125, 134);
+            this.lstMethods.Size = new System.Drawing.Size(125, 108);
             this.lstMethods.TabIndex = 2;
             this.lstMethods.SelectedIndexChanged += new System.EventHandler(this.lstMethods_SelectedIndexChanged);
             // 
@@ -582,7 +610,7 @@
             // 
             this.cmbWebService.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbWebService.FormattingEnabled = true;
-            this.cmbWebService.Location = new System.Drawing.Point(7, 22);
+            this.cmbWebService.Location = new System.Drawing.Point(8, 48);
             this.cmbWebService.Name = "cmbWebService";
             this.cmbWebService.Size = new System.Drawing.Size(125, 24);
             this.cmbWebService.TabIndex = 0;
@@ -591,7 +619,7 @@
             // lblMethods
             // 
             this.lblMethods.AutoSize = true;
-            this.lblMethods.Location = new System.Drawing.Point(7, 53);
+            this.lblMethods.Location = new System.Drawing.Point(8, 79);
             this.lblMethods.Name = "lblMethods";
             this.lblMethods.Size = new System.Drawing.Size(75, 13);
             this.lblMethods.TabIndex = 1;
@@ -600,7 +628,7 @@
             // lblWsName
             // 
             this.lblWsName.AutoSize = true;
-            this.lblWsName.Location = new System.Drawing.Point(7, 5);
+            this.lblWsName.Location = new System.Drawing.Point(8, 31);
             this.lblWsName.Name = "lblWsName";
             this.lblWsName.Size = new System.Drawing.Size(102, 13);
             this.lblWsName.TabIndex = 27;
@@ -610,7 +638,7 @@
             // 
             this.btnTest.BackColor = System.Drawing.Color.Lime;
             this.btnTest.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTest.Location = new System.Drawing.Point(7, 211);
+            this.btnTest.Location = new System.Drawing.Point(9, 211);
             this.btnTest.Name = "btnTest";
             this.btnTest.Size = new System.Drawing.Size(125, 20);
             this.btnTest.TabIndex = 3;
@@ -697,7 +725,7 @@
             // 
             // txtListSize
             // 
-            this.txtListSize.Location = new System.Drawing.Point(71, 4);
+            this.txtListSize.Location = new System.Drawing.Point(71, 5);
             this.txtListSize.Name = "txtListSize";
             this.txtListSize.Size = new System.Drawing.Size(62, 20);
             this.txtListSize.TabIndex = 53;
@@ -706,7 +734,7 @@
             // lstListSize
             // 
             this.lstListSize.AutoSize = true;
-            this.lstListSize.Location = new System.Drawing.Point(7, 6);
+            this.lstListSize.Location = new System.Drawing.Point(7, 8);
             this.lstListSize.Name = "lstListSize";
             this.lstListSize.Size = new System.Drawing.Size(57, 13);
             this.lstListSize.TabIndex = 54;
@@ -803,7 +831,7 @@
             // lblBlockKey
             // 
             this.lblBlockKey.AutoSize = true;
-            this.lblBlockKey.Location = new System.Drawing.Point(4, 6);
+            this.lblBlockKey.Location = new System.Drawing.Point(6, 6);
             this.lblBlockKey.Name = "lblBlockKey";
             this.lblBlockKey.Size = new System.Drawing.Size(55, 13);
             this.lblBlockKey.TabIndex = 7;
@@ -812,7 +840,7 @@
             // lblDelLineKeys
             // 
             this.lblDelLineKeys.AutoSize = true;
-            this.lblDelLineKeys.Location = new System.Drawing.Point(4, 48);
+            this.lblDelLineKeys.Location = new System.Drawing.Point(6, 48);
             this.lblDelLineKeys.Name = "lblDelLineKeys";
             this.lblDelLineKeys.Size = new System.Drawing.Size(53, 13);
             this.lblDelLineKeys.TabIndex = 9;
@@ -820,7 +848,7 @@
             // 
             // txtBlockKey
             // 
-            this.txtBlockKey.Location = new System.Drawing.Point(9, 22);
+            this.txtBlockKey.Location = new System.Drawing.Point(6, 22);
             this.txtBlockKey.Name = "txtBlockKey";
             this.txtBlockKey.Size = new System.Drawing.Size(124, 20);
             this.txtBlockKey.TabIndex = 53;
@@ -1299,6 +1327,8 @@
         private System.Windows.Forms.Button btnX3;
         private System.Windows.Forms.TextBox txtWebsite;
         private System.Windows.Forms.SplitContainer splVer;
+        private System.Windows.Forms.RadioButton rdbSubProgram;
+        private System.Windows.Forms.RadioButton rdbObject;
     }
 }
 

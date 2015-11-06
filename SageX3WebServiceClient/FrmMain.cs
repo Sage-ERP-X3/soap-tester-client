@@ -17,8 +17,6 @@ namespace SageX3SoapWsTester
         #region Properties/Fields
 
         CAdxWebServiceXmlCCServiceBasic _x3Ws = new CAdxWebServiceXmlCCServiceBasic(); // X3 webservice object
-        string _wsName = "";
-        string _wsType = "";
         string _paramFile = "";
         #endregion 
 
@@ -115,6 +113,7 @@ namespace SageX3SoapWsTester
             ShowConfiguration();
         }
 
+        //Other parameter types
         private void rdbXml_CheckedChanged(object sender, EventArgs e)
         {
             if (pnlParam.Enabled == true)
@@ -131,15 +130,23 @@ namespace SageX3SoapWsTester
             }
         }
 
+        //Other sub program types
+        private void rdbObject_CheckedChanged(object sender, EventArgs e)
+        {
+            UpdateWsList();
+        }
+
+        private void rdbSubProgram_CheckedChanged(object sender, EventArgs e)
+        {
+            UpdateWsList();
+        }
+
         #endregion
 
         #region Private methods
 
         private void SetInitialValues()
         {
-            // Get List of objects and sub programs
-            UpdateWsList();
-
             // Get app settings
             txtPoolAlias.Text = ConfigurationManager.AppSettings["PoolAlias"];
             txtRetrievalUrl.Text = ConfigurationManager.AppSettings["RetreivalUrl"];
@@ -147,7 +154,7 @@ namespace SageX3SoapWsTester
 
             // Set initial defaults
             lstMethods.SelectedIndex = 0;
-            cmbWebService.SelectedIndex = 0;
+
             // Set parameter input type 
             rdbXml.Checked = true;
             // Set configutation defaults
@@ -160,6 +167,8 @@ namespace SageX3SoapWsTester
             cmbCodeLang.SelectedIndex = 0;
             // Set basci authentication
             rdbBasic.Checked=true;
+            // Set web service type to object
+            rdbObject.Checked = true;
         }
 
         private void ChangeFormState()
@@ -229,32 +238,38 @@ namespace SageX3SoapWsTester
             cmbWebService.Items.Clear();
 
             string wsName = "";
-            
-            // Add sub programs to Web Service List 
-            string subProgsPath = Application.StartupPath + "\\ParamFiles\\SubProgram\\";
-            List<string> dirs = new List<string>(Directory.EnumerateDirectories(subProgsPath));
-            foreach (var dir in dirs)
+
+            if (rdbObject.Checked == true)
             {
-                wsName = dir.Substring(dir.LastIndexOf("\\") + 1) + " ~ SubProgram";
-                cmbWebService.Items.Add(wsName);
+                // Add objects to Web Service List 
+                string objectsPath = Application.StartupPath + "\\ParamFiles\\Object\\";
+                List<string> dirsO = new List<string>(Directory.EnumerateDirectories(objectsPath));
+                foreach (var dir in dirsO)
+                {
+                    wsName = dir.Substring(dir.LastIndexOf("\\") + 1);
+                    cmbWebService.Items.Add(wsName);
+                }
+
+            }
+            else
+            {
+                // Add sub programs to Web Service List 
+                string subProgsPath = Application.StartupPath + "\\ParamFiles\\SubProgram\\";
+                List<string> dirs = new List<string>(Directory.EnumerateDirectories(subProgsPath));
+                foreach (var dir in dirs)
+                {
+                    wsName = dir.Substring(dir.LastIndexOf("\\") + 1);
+                    cmbWebService.Items.Add(wsName);
+                }
             }
 
-            // Add objects to Web Service List 
-            string objectsPath = Application.StartupPath + "\\ParamFiles\\Object\\";
-            List<string> dirsO = new List<string>(Directory.EnumerateDirectories(objectsPath));
-            foreach (var dir in dirsO)
-            {
-                wsName = dir.Substring(dir.LastIndexOf("\\") + 1) + " ~ Object";
-                cmbWebService.Items.Add(wsName);
-            }
+            cmbWebService.SelectedIndex = 0;
 
         }
 
         private void UpdateWsMethodList()
         {
-            string[] ws = cmbWebService.Text.ToString().Split('~');
-            _wsName = ws[0].Trim().ToUpper();
-            _wsType = ws[1].Trim().ToUpper();
+            string wsName = cmbWebService.Text.Trim().ToUpper();
 
             //Get current selected method 
             string curMethod = lstMethods.Text;
@@ -264,7 +279,7 @@ namespace SageX3SoapWsTester
             lstMethods.Items.Add("getDescription");
             lstMethods.Items.Add("getDataXmlSchema");
 
-            if (_wsType == "OBJECT")
+            if (rdbObject.Checked == true)
             {
                 lstMethods.Items.Add("query");
                 lstMethods.Items.Add("read");
@@ -293,8 +308,9 @@ namespace SageX3SoapWsTester
 
         private void SetCriteriaKey()
         {
+            string wsName = cmbWebService.Text.ToUpper().Trim();
             string criteriaKey = "TEST";
-            switch (_wsName)
+            switch (wsName)
             {
                 case "WSAUS":
                     //Users
@@ -523,17 +539,23 @@ namespace SageX3SoapWsTester
 
         private void GetSampleParameters()
         {
+            string wsName = cmbWebService.Text.ToUpper().Trim();
             string fileType = (rdbXml.Checked == true) ? ".XML" : ".JSON";
+            string wsType = (rdbObject.Checked == true) ? "Object" : "SubProgram";
             _paramFile = Application.StartupPath +
-                        "\\ParamFiles\\" + _wsType  + "\\" + _wsName + "\\" + 
-                        _wsName + "_" + lstMethods.Text.ToUpper() + 
+                        "\\ParamFiles\\" + wsType  + "\\" + wsName + "\\" + 
+                        wsName + "_" + lstMethods.Text.ToUpper() + 
                         fileType;
             try
             {
                 if (File.Exists(_paramFile) == true)
                 {
-                    txtParam.Text = ReadTextFile(_paramFile); ;
+                    txtParam.Text = ReadTextFile(_paramFile);
+                } else
+                {
+                    txtParam.Text = "";
                 }
+
             } catch (Exception ex)
             {
                 ErrorHandler(ex.Message);
@@ -675,26 +697,27 @@ namespace SageX3SoapWsTester
 
         private void PopulateBlockKeys()
         {
-            if (_wsName == "WSAUS")
+            string wsName = cmbWebService.Text.ToUpper().Trim();
+            if (wsName == "WSAUS")
             {
                 // addresses
                 txtBlockKey.Text = "AUS2~NBADR";
             }
-            else if (_wsName == "WSBPC")
+            else if (wsName == "WSBPC")
             {
                 // addresses
                 txtBlockKey.Text = "BPAC~NBADR";
             }
-            else if (_wsName == "WSITM")
+            else if (wsName == "WSITM")
             {
                 //pack units
                 txtBlockKey.Text = "ITM3~BASTAB";
             }
-            else if (_wsName == "WSSOH_WS")
+            else if (wsName == "WSSOH_WS")
             {
                 txtBlockKey.Text = "SOH4~NBLIG";
             }
-            else if (_wsName == "WSREP")
+            else if (wsName == "WSREP")
             {
                 // addresses
                 txtBlockKey.Text = "BPAR~NBADR";
@@ -770,7 +793,8 @@ namespace SageX3SoapWsTester
 
             try
             {
-                CAdxWebServiceXmlCC.CAdxResultXml result = _x3Ws.getDescription(callContext, _wsName);
+                string wsName = cmbWebService.Text.ToUpper().Trim();
+                CAdxWebServiceXmlCC.CAdxResultXml result = _x3Ws.getDescription(callContext, wsName);
 
                 if (result.resultXml != null)
                 {
@@ -783,7 +807,7 @@ namespace SageX3SoapWsTester
                 {
                     if (result.messages != null && result.messages.Length > 0)
                     {
-                        MessageBox.Show(result.messages.ToString());
+                        MessageBox.Show(result.messages[0].message);
                     }
                 }
             }
@@ -860,51 +884,52 @@ namespace SageX3SoapWsTester
                 _x3Ws.PreAuthenticate = true;
 
                 // Call appropiate WS method
+                string wsName = cmbWebService.Text.ToUpper().Trim();
                 string methodName = lstMethods.Text.ToUpper().Trim();
                 switch (methodName)
                 {
                     case "GETDESCRIPTION":
-                        cAdxResultXml = _x3Ws.getDescription(cAdxCallContext, _wsName);
+                        cAdxResultXml = _x3Ws.getDescription(cAdxCallContext, wsName);
                         break;
                     case "GETDATAXMLSCHEMA":
-                        cAdxResultXml = _x3Ws.getDataXmlSchema(cAdxCallContext, _wsName);
+                        cAdxResultXml = _x3Ws.getDataXmlSchema(cAdxCallContext, wsName);
                         break;
                     case "RUN":
-                        cAdxResultXml = _x3Ws.run(cAdxCallContext,_wsName, objectXml);
+                        cAdxResultXml = _x3Ws.run(cAdxCallContext,wsName, objectXml);
                         break;
                     case "QUERY":
                         objectKeys = GetCriteria(cAdxCallContext);
-                        cAdxResultXml = _x3Ws.query(cAdxCallContext, _wsName, objectKeys, listSize);
+                        cAdxResultXml = _x3Ws.query(cAdxCallContext, wsName, objectKeys, listSize);
                         break;
                     case "READ":
                         objectKeys = GetCriteria(cAdxCallContext);
-                        cAdxResultXml = _x3Ws.read(cAdxCallContext,_wsName, objectKeys);
+                        cAdxResultXml = _x3Ws.read(cAdxCallContext,wsName, objectKeys);
                         break;
                     case "MODIFY":
                         objectKeys = GetCriteria(cAdxCallContext);
-                        cAdxResultXml = _x3Ws.modify(cAdxCallContext,_wsName, objectKeys, objectXml);
+                        cAdxResultXml = _x3Ws.modify(cAdxCallContext,wsName, objectKeys, objectXml);
                         break;
                     case "SAVE":
-                        cAdxResultXml = _x3Ws.save(cAdxCallContext, _wsName, objectXml);
+                        cAdxResultXml = _x3Ws.save(cAdxCallContext, wsName, objectXml);
                         break;
                     case "DELETE":
                         objectKeys = GetCriteria(cAdxCallContext);
-                        cAdxResultXml = _x3Ws.delete(cAdxCallContext,_wsName, objectKeys);
+                        cAdxResultXml = _x3Ws.delete(cAdxCallContext,wsName, objectKeys);
                         break;
                     case "DELETELINES":
                         objectKeys = GetCriteria(cAdxCallContext);
                         lineKeys = GetDeleteLineKeys();
-                        cAdxResultXml = _x3Ws.deleteLines(cAdxCallContext, _wsName, objectKeys, blockKey, lineKeys);
+                        cAdxResultXml = _x3Ws.deleteLines(cAdxCallContext, wsName, objectKeys, blockKey, lineKeys);
                         break;
                     case "INSERTLINES":
                         //this action is not implimented
                         objectKeys = GetCriteria(cAdxCallContext);
                         lineKeys = GetDeleteLineKeys();
-                        cAdxResultXml = _x3Ws.insertLines(cAdxCallContext, _wsName, objectKeys, blockKey, "1", objectXml);
+                        cAdxResultXml = _x3Ws.insertLines(cAdxCallContext, wsName, objectKeys, blockKey, "1", objectXml);
                         break;
                     case "ACTIONOBJECT":
                         //**********************************************************************************************
-                        cAdxResultXml = _x3Ws.actionObject(cAdxCallContext, _wsName, actionCode, objectXml);
+                        cAdxResultXml = _x3Ws.actionObject(cAdxCallContext, wsName, actionCode, objectXml);
                         break;
                     default:
                         MessageBox.Show("Select a supported methods");
