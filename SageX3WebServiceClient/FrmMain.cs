@@ -799,7 +799,10 @@ namespace SageX3SoapWsTester
         {
             CAdxParamKeyValue paramKeyValue = new CAdxParamKeyValue();
             paramKeyValue.key = leftListXmlNode.ChildNodes[i].Attributes["NAM"].Value;
-            paramKeyValue.value = keyValues[i];
+            // Clean up value string
+            string value = keyValues[i].Replace("\r", string.Empty);
+            value = value.Replace("\n", string.Empty);
+            paramKeyValue.value = value;
             return paramKeyValue;
         }
 

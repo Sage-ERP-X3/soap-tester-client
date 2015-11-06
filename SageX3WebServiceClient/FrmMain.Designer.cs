@@ -118,6 +118,7 @@
             this.pnlAuth = new System.Windows.Forms.Panel();
             this.lblAuth = new System.Windows.Forms.Label();
             this.btnX3 = new System.Windows.Forms.Button();
+            this.splVer = new System.Windows.Forms.SplitContainer();
             this.tabWs.SuspendLayout();
             this.tabDesc.SuspendLayout();
             this.tabResult.SuspendLayout();
@@ -135,6 +136,10 @@
             this.pnlApplServer.SuspendLayout();
             this.pnlSetting.SuspendLayout();
             this.pnlAuth.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splVer)).BeginInit();
+            this.splVer.Panel1.SuspendLayout();
+            this.splVer.Panel2.SuspendLayout();
+            this.splVer.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabWs
@@ -146,11 +151,11 @@
             this.tabWs.Controls.Add(this.tabResult);
             this.tabWs.Controls.Add(this.tabMsgRpt);
             this.tabWs.Controls.Add(this.tabTrace);
-            this.tabWs.Location = new System.Drawing.Point(8, 225);
+            this.tabWs.Location = new System.Drawing.Point(7, 5);
             this.tabWs.Multiline = true;
             this.tabWs.Name = "tabWs";
             this.tabWs.SelectedIndex = 0;
-            this.tabWs.Size = new System.Drawing.Size(597, 509);
+            this.tabWs.Size = new System.Drawing.Size(581, 511);
             this.tabWs.TabIndex = 15;
             // 
             // tabDesc
@@ -159,7 +164,7 @@
             this.tabDesc.Controls.Add(this.txtReplDesc);
             this.tabDesc.Location = new System.Drawing.Point(4, 22);
             this.tabDesc.Name = "tabDesc";
-            this.tabDesc.Size = new System.Drawing.Size(589, 483);
+            this.tabDesc.Size = new System.Drawing.Size(573, 485);
             this.tabDesc.TabIndex = 2;
             this.tabDesc.Text = "Description";
             this.tabDesc.UseVisualStyleBackColor = true;
@@ -189,7 +194,7 @@
             this.txtReplDesc.Multiline = true;
             this.txtReplDesc.Name = "txtReplDesc";
             this.txtReplDesc.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtReplDesc.Size = new System.Drawing.Size(573, 447);
+            this.txtReplDesc.Size = new System.Drawing.Size(557, 449);
             this.txtReplDesc.TabIndex = 69;
             this.txtReplDesc.WordWrap = false;
             // 
@@ -468,7 +473,7 @@
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(5, 8);
+            this.lblTitle.Location = new System.Drawing.Point(5, 12);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(301, 20);
             this.lblTitle.TabIndex = 0;
@@ -477,7 +482,7 @@
             // btnExit
             // 
             this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExit.Location = new System.Drawing.Point(1026, 13);
+            this.btnExit.Location = new System.Drawing.Point(1036, 11);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(56, 23);
             this.btnExit.TabIndex = 21;
@@ -488,7 +493,7 @@
             // btnBeautify
             // 
             this.btnBeautify.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnBeautify.Location = new System.Drawing.Point(898, 13);
+            this.btnBeautify.Location = new System.Drawing.Point(908, 11);
             this.btnBeautify.Name = "btnBeautify";
             this.btnBeautify.Size = new System.Drawing.Size(56, 23);
             this.btnBeautify.TabIndex = 19;
@@ -499,7 +504,7 @@
             // btnClear
             // 
             this.btnClear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClear.Location = new System.Drawing.Point(962, 13);
+            this.btnClear.Location = new System.Drawing.Point(972, 11);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(56, 23);
             this.btnClear.TabIndex = 20;
@@ -509,10 +514,9 @@
             // 
             // lblList
             // 
-            this.lblList.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblList.AutoSize = true;
             this.lblList.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblList.Location = new System.Drawing.Point(816, 229);
+            this.lblList.Location = new System.Drawing.Point(202, 11);
             this.lblList.Name = "lblList";
             this.lblList.Size = new System.Drawing.Size(59, 16);
             this.lblList.TabIndex = 5;
@@ -523,7 +527,7 @@
             this.lblParam.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblParam.AutoSize = true;
             this.lblParam.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblParam.Location = new System.Drawing.Point(620, 494);
+            this.lblParam.Location = new System.Drawing.Point(6, 276);
             this.lblParam.Name = "lblParam";
             this.lblParam.Size = new System.Drawing.Size(75, 16);
             this.lblParam.TabIndex = 13;
@@ -531,10 +535,9 @@
             // 
             // lblCriteria
             // 
-            this.lblCriteria.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCriteria.AutoSize = true;
             this.lblCriteria.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCriteria.Location = new System.Drawing.Point(821, 284);
+            this.lblCriteria.Location = new System.Drawing.Point(207, 66);
             this.lblCriteria.Name = "lblCriteria";
             this.lblCriteria.Size = new System.Drawing.Size(49, 16);
             this.lblCriteria.TabIndex = 7;
@@ -542,10 +545,9 @@
             // 
             // lblWebService
             // 
-            this.lblWebService.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblWebService.AutoSize = true;
             this.lblWebService.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWebService.Location = new System.Drawing.Point(651, 229);
+            this.lblWebService.Location = new System.Drawing.Point(37, 11);
             this.lblWebService.Name = "lblWebService";
             this.lblWebService.Size = new System.Drawing.Size(81, 16);
             this.lblWebService.TabIndex = 3;
@@ -553,14 +555,13 @@
             // 
             // pnlSelection
             // 
-            this.pnlSelection.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlSelection.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pnlSelection.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlSelection.Controls.Add(this.lstMethods);
             this.pnlSelection.Controls.Add(this.cmbWebService);
             this.pnlSelection.Controls.Add(this.lblMethods);
             this.pnlSelection.Controls.Add(this.lblWsName);
             this.pnlSelection.Controls.Add(this.btnTest);
-            this.pnlSelection.Location = new System.Drawing.Point(622, 247);
+            this.pnlSelection.Location = new System.Drawing.Point(8, 29);
             this.pnlSelection.Name = "pnlSelection";
             this.pnlSelection.Size = new System.Drawing.Size(144, 240);
             this.pnlSelection.TabIndex = 4;
@@ -619,14 +620,15 @@
             // 
             // pnlParam
             // 
-            this.pnlParam.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.pnlParam.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlParam.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pnlParam.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlParam.Controls.Add(this.rdbJson);
             this.pnlParam.Controls.Add(this.rdbXml);
             this.pnlParam.Controls.Add(this.lnkParam);
             this.pnlParam.Controls.Add(this.txtParam);
-            this.pnlParam.Location = new System.Drawing.Point(622, 513);
+            this.pnlParam.Location = new System.Drawing.Point(8, 295);
             this.pnlParam.Name = "pnlParam";
             this.pnlParam.Size = new System.Drawing.Size(460, 221);
             this.pnlParam.TabIndex = 14;
@@ -660,7 +662,7 @@
             this.lnkParam.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lnkParam.AutoSize = true;
             this.lnkParam.Font = new System.Drawing.Font("Courier New", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lnkParam.Location = new System.Drawing.Point(410, 4);
+            this.lnkParam.Location = new System.Drawing.Point(412, 4);
             this.lnkParam.Name = "lnkParam";
             this.lnkParam.Size = new System.Drawing.Size(35, 14);
             this.lnkParam.TabIndex = 0;
@@ -679,17 +681,16 @@
             this.txtParam.Multiline = true;
             this.txtParam.Name = "txtParam";
             this.txtParam.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtParam.Size = new System.Drawing.Size(435, 183);
+            this.txtParam.Size = new System.Drawing.Size(437, 185);
             this.txtParam.TabIndex = 1;
             this.txtParam.WordWrap = false;
             // 
             // pnlList
             // 
-            this.pnlList.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlList.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pnlList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlList.Controls.Add(this.txtListSize);
             this.pnlList.Controls.Add(this.lstListSize);
-            this.pnlList.Location = new System.Drawing.Point(782, 247);
+            this.pnlList.Location = new System.Drawing.Point(168, 29);
             this.pnlList.Name = "pnlList";
             this.pnlList.Size = new System.Drawing.Size(144, 33);
             this.pnlList.TabIndex = 6;
@@ -713,10 +714,9 @@
             // 
             // pnlCriteria
             // 
-            this.pnlCriteria.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlCriteria.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pnlCriteria.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlCriteria.Controls.Add(this.txtCriteria);
-            this.pnlCriteria.Location = new System.Drawing.Point(782, 303);
+            this.pnlCriteria.Location = new System.Drawing.Point(168, 85);
             this.pnlCriteria.Name = "pnlCriteria";
             this.pnlCriteria.Size = new System.Drawing.Size(144, 183);
             this.pnlCriteria.TabIndex = 8;
@@ -733,11 +733,10 @@
             // 
             // pnlAction
             // 
-            this.pnlAction.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlAction.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pnlAction.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlAction.Controls.Add(this.txtActionCode);
             this.pnlAction.Controls.Add(this.lblActionCode);
-            this.pnlAction.Location = new System.Drawing.Point(942, 454);
+            this.pnlAction.Location = new System.Drawing.Point(328, 236);
             this.pnlAction.Name = "pnlAction";
             this.pnlAction.Size = new System.Drawing.Size(140, 33);
             this.pnlAction.TabIndex = 10;
@@ -761,10 +760,9 @@
             // 
             // lblAction
             // 
-            this.lblAction.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblAction.AutoSize = true;
             this.lblAction.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAction.Location = new System.Drawing.Point(992, 435);
+            this.lblAction.Location = new System.Drawing.Point(378, 217);
             this.lblAction.Name = "lblAction";
             this.lblAction.Size = new System.Drawing.Size(45, 16);
             this.lblAction.TabIndex = 9;
@@ -772,10 +770,9 @@
             // 
             // lblDelLines
             // 
-            this.lblDelLines.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblDelLines.AutoSize = true;
             this.lblDelLines.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDelLines.Location = new System.Drawing.Point(969, 229);
+            this.lblDelLines.Location = new System.Drawing.Point(355, 11);
             this.lblDelLines.Name = "lblDelLines";
             this.lblDelLines.Size = new System.Drawing.Size(80, 16);
             this.lblDelLines.TabIndex = 11;
@@ -783,13 +780,12 @@
             // 
             // pnlDelLines
             // 
-            this.pnlDelLines.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlDelLines.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pnlDelLines.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlDelLines.Controls.Add(this.txtLineKeys);
             this.pnlDelLines.Controls.Add(this.lblBlockKey);
             this.pnlDelLines.Controls.Add(this.lblDelLineKeys);
             this.pnlDelLines.Controls.Add(this.txtBlockKey);
-            this.pnlDelLines.Location = new System.Drawing.Point(942, 247);
+            this.pnlDelLines.Location = new System.Drawing.Point(328, 29);
             this.pnlDelLines.Name = "pnlDelLines";
             this.pnlDelLines.Size = new System.Drawing.Size(140, 183);
             this.pnlDelLines.TabIndex = 12;
@@ -835,7 +831,7 @@
             this.lnkConfig.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lnkConfig.AutoSize = true;
             this.lnkConfig.Font = new System.Drawing.Font("Courier New", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lnkConfig.Location = new System.Drawing.Point(620, 38);
+            this.lnkConfig.Location = new System.Drawing.Point(630, 38);
             this.lnkConfig.Name = "lnkConfig";
             this.lnkConfig.Size = new System.Drawing.Size(104, 17);
             this.lnkConfig.TabIndex = 1;
@@ -853,9 +849,9 @@
             this.pnlConfiguration.Controls.Add(this.lblWs);
             this.pnlConfiguration.Controls.Add(this.pnlWsServer);
             this.pnlConfiguration.Controls.Add(this.pnlApplServer);
-            this.pnlConfiguration.Location = new System.Drawing.Point(622, 58);
+            this.pnlConfiguration.Location = new System.Drawing.Point(611, 58);
             this.pnlConfiguration.Name = "pnlConfiguration";
-            this.pnlConfiguration.Size = new System.Drawing.Size(460, 157);
+            this.pnlConfiguration.Size = new System.Drawing.Size(481, 157);
             this.pnlConfiguration.TabIndex = 2;
             // 
             // lblApplServer
@@ -878,13 +874,13 @@
             // 
             // panel3
             // 
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.cmbReturnFormat);
             this.panel3.Controls.Add(this.lblReturnFormat);
             this.panel3.Controls.Add(this.chkBeautify);
             this.panel3.Location = new System.Drawing.Point(219, 24);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(228, 40);
+            this.panel3.Size = new System.Drawing.Size(251, 40);
             this.panel3.TabIndex = 2;
             // 
             // cmbReturnFormat
@@ -894,9 +890,9 @@
             "XML",
             "JSON",
             "XMLXSD"});
-            this.cmbReturnFormat.Location = new System.Drawing.Point(51, 6);
+            this.cmbReturnFormat.Location = new System.Drawing.Point(52, 6);
             this.cmbReturnFormat.Name = "cmbReturnFormat";
-            this.cmbReturnFormat.Size = new System.Drawing.Size(71, 21);
+            this.cmbReturnFormat.Size = new System.Drawing.Size(82, 21);
             this.cmbReturnFormat.TabIndex = 0;
             // 
             // lblReturnFormat
@@ -911,7 +907,7 @@
             // chkBeautify
             // 
             this.chkBeautify.AutoSize = true;
-            this.chkBeautify.Location = new System.Drawing.Point(154, 7);
+            this.chkBeautify.Location = new System.Drawing.Point(174, 8);
             this.chkBeautify.Name = "chkBeautify";
             this.chkBeautify.Size = new System.Drawing.Size(64, 17);
             this.chkBeautify.TabIndex = 1;
@@ -929,7 +925,7 @@
             // 
             // pnlWsServer
             // 
-            this.pnlWsServer.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pnlWsServer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlWsServer.Controls.Add(this.chkTraceWs);
             this.pnlWsServer.Controls.Add(this.txtTraceWsSize);
             this.pnlWsServer.Controls.Add(this.lblTraceWsSize);
@@ -967,7 +963,7 @@
             // 
             // pnlApplServer
             // 
-            this.pnlApplServer.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pnlApplServer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlApplServer.Controls.Add(this.cmbAppTraceLevel);
             this.pnlApplServer.Controls.Add(this.chkTraceApp);
             this.pnlApplServer.Controls.Add(this.lblAppLevel);
@@ -975,7 +971,7 @@
             this.pnlApplServer.Controls.Add(this.lblAppTraceSize);
             this.pnlApplServer.Location = new System.Drawing.Point(10, 99);
             this.pnlApplServer.Name = "pnlApplServer";
-            this.pnlApplServer.Size = new System.Drawing.Size(437, 40);
+            this.pnlApplServer.Size = new System.Drawing.Size(460, 40);
             this.pnlApplServer.TabIndex = 1;
             // 
             // cmbAppTraceLevel
@@ -987,7 +983,7 @@
             "Input and Output Parameters"});
             this.cmbAppTraceLevel.Location = new System.Drawing.Point(260, 6);
             this.cmbAppTraceLevel.Name = "cmbAppTraceLevel";
-            this.cmbAppTraceLevel.Size = new System.Drawing.Size(167, 21);
+            this.cmbAppTraceLevel.Size = new System.Drawing.Size(187, 21);
             this.cmbAppTraceLevel.TabIndex = 3;
             // 
             // chkTraceApp
@@ -1046,6 +1042,8 @@
             // 
             // txtWebsite
             // 
+            this.txtWebsite.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtWebsite.Location = new System.Drawing.Point(81, 8);
             this.txtWebsite.Name = "txtWebsite";
             this.txtWebsite.Size = new System.Drawing.Size(502, 20);
@@ -1101,7 +1099,7 @@
             // btnX3
             // 
             this.btnX3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnX3.Location = new System.Drawing.Point(836, 13);
+            this.btnX3.Location = new System.Drawing.Point(846, 11);
             this.btnX3.Name = "btnX3";
             this.btnX3.Size = new System.Drawing.Size(56, 23);
             this.btnX3.TabIndex = 76;
@@ -1109,31 +1107,52 @@
             this.btnX3.UseVisualStyleBackColor = true;
             this.btnX3.Click += new System.EventHandler(this.btnX3_Click);
             // 
+            // splVer
+            // 
+            this.splVer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.splVer.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.splVer.FixedPanel = System.Windows.Forms.FixedPanel.Panel2;
+            this.splVer.Location = new System.Drawing.Point(8, 221);
+            this.splVer.Name = "splVer";
+            // 
+            // splVer.Panel1
+            // 
+            this.splVer.Panel1.Controls.Add(this.tabWs);
+            // 
+            // splVer.Panel2
+            // 
+            this.splVer.Panel2.Controls.Add(this.lblWebService);
+            this.splVer.Panel2.Controls.Add(this.pnlCriteria);
+            this.splVer.Panel2.Controls.Add(this.pnlList);
+            this.splVer.Panel2.Controls.Add(this.pnlParam);
+            this.splVer.Panel2.Controls.Add(this.pnlSelection);
+            this.splVer.Panel2.Controls.Add(this.lblCriteria);
+            this.splVer.Panel2.Controls.Add(this.lblParam);
+            this.splVer.Panel2.Controls.Add(this.lblDelLines);
+            this.splVer.Panel2.Controls.Add(this.lblList);
+            this.splVer.Panel2.Controls.Add(this.pnlDelLines);
+            this.splVer.Panel2.Controls.Add(this.pnlAction);
+            this.splVer.Panel2.Controls.Add(this.lblAction);
+            this.splVer.Panel2MinSize = 480;
+            this.splVer.Size = new System.Drawing.Size(1084, 525);
+            this.splVer.SplitterDistance = 599;
+            this.splVer.TabIndex = 77;
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(1092, 750);
+            this.ClientSize = new System.Drawing.Size(1102, 760);
+            this.Controls.Add(this.splVer);
             this.Controls.Add(this.btnX3);
             this.Controls.Add(this.lblAuth);
             this.Controls.Add(this.pnlAuth);
             this.Controls.Add(this.lblSettings);
             this.Controls.Add(this.pnlSetting);
-            this.Controls.Add(this.tabWs);
             this.Controls.Add(this.lnkConfig);
-            this.Controls.Add(this.lblDelLines);
-            this.Controls.Add(this.pnlDelLines);
-            this.Controls.Add(this.lblAction);
-            this.Controls.Add(this.pnlAction);
-            this.Controls.Add(this.lblList);
-            this.Controls.Add(this.lblParam);
-            this.Controls.Add(this.lblCriteria);
-            this.Controls.Add(this.lblWebService);
-            this.Controls.Add(this.pnlSelection);
-            this.Controls.Add(this.pnlParam);
-            this.Controls.Add(this.pnlList);
-            this.Controls.Add(this.pnlCriteria);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.lblTitle);
@@ -1178,6 +1197,11 @@
             this.pnlSetting.PerformLayout();
             this.pnlAuth.ResumeLayout(false);
             this.pnlAuth.PerformLayout();
+            this.splVer.Panel1.ResumeLayout(false);
+            this.splVer.Panel2.ResumeLayout(false);
+            this.splVer.Panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splVer)).EndInit();
+            this.splVer.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1274,6 +1298,7 @@
         private System.Windows.Forms.Label lblWebsite;
         private System.Windows.Forms.Button btnX3;
         private System.Windows.Forms.TextBox txtWebsite;
+        private System.Windows.Forms.SplitContainer splVer;
     }
 }
 
