@@ -199,6 +199,7 @@
             this.txtReplDesc.Size = new System.Drawing.Size(557, 449);
             this.txtReplDesc.TabIndex = 69;
             this.txtReplDesc.WordWrap = false;
+            this.txtReplDesc.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtReplDesc_KeyDown);
             // 
             // tabResult
             // 
@@ -242,6 +243,7 @@
             this.txtResult.Size = new System.Drawing.Size(557, 449);
             this.txtResult.TabIndex = 68;
             this.txtResult.WordWrap = false;
+            this.txtResult.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtResult_KeyDown);
             // 
             // txtTesterTime
             // 
@@ -291,6 +293,7 @@
             this.txtMsgRep.Size = new System.Drawing.Size(557, 449);
             this.txtMsgRep.TabIndex = 71;
             this.txtMsgRep.WordWrap = false;
+            this.txtMsgRep.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtMsgRep_KeyDown);
             // 
             // lnkMsgRep
             // 
@@ -343,6 +346,7 @@
             this.txtTrace.Size = new System.Drawing.Size(557, 449);
             this.txtTrace.TabIndex = 66;
             this.txtTrace.WordWrap = false;
+            this.txtTrace.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtTrace_KeyDown);
             // 
             // lblOauthKeu
             // 
@@ -436,7 +440,6 @@
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(147, 20);
             this.txtPassword.TabIndex = 7;
-            this.txtPassword.Text = "admin";
             // 
             // lblPoolAlias
             // 
@@ -469,7 +472,6 @@
             this.txtCodeUser.Name = "txtCodeUser";
             this.txtCodeUser.Size = new System.Drawing.Size(147, 20);
             this.txtCodeUser.TabIndex = 5;
-            this.txtCodeUser.Text = "admin";
             // 
             // lblTitle
             // 
@@ -712,6 +714,7 @@
             this.txtParam.Size = new System.Drawing.Size(437, 185);
             this.txtParam.TabIndex = 1;
             this.txtParam.WordWrap = false;
+            this.txtParam.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtParam_KeyDown);
             // 
             // pnlList
             // 

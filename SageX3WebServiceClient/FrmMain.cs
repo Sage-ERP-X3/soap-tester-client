@@ -32,6 +32,33 @@ namespace SageX3SoapWsTester
             SetInitialValues();
         }
 
+        //Text box hotkeys
+        private void txtResult_KeyDown(object sender, KeyEventArgs e)
+        {
+            TextBoxKeyDown(e, txtResult);
+        }
+
+        private void txtParam_KeyDown(object sender, KeyEventArgs e)
+        {
+            TextBoxKeyDown(e, txtParam);
+        }
+
+        private void txtReplDesc_KeyDown(object sender, KeyEventArgs e)
+        {
+            TextBoxKeyDown(e, txtReplDesc);
+        }
+
+        private void txtMsgRep_KeyDown(object sender, KeyEventArgs e)
+        {
+            TextBoxKeyDown(e, txtMsgRep);
+        }
+
+        private void txtTrace_KeyDown(object sender, KeyEventArgs e)
+        {
+            TextBoxKeyDown(e, txtTrace);
+        }
+
+        //Button actions
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -151,6 +178,12 @@ namespace SageX3SoapWsTester
             txtPoolAlias.Text = ConfigurationManager.AppSettings["PoolAlias"];
             txtRetrievalUrl.Text = ConfigurationManager.AppSettings["RetreivalUrl"];
             txtWebsite.Text = ConfigurationManager.AppSettings["x3Website"];
+            txtCodeUser.Text = ConfigurationManager.AppSettings["UserID"];
+            txtPassword.Text = ConfigurationManager.AppSettings["Password"];
+            if (File.Exists("ExtConfig.txt") == true)
+            {
+                txtWebsite.Text = File.ReadAllText("ExtConfig.Txt");
+            }
 
             // Set initial defaults
             lstMethods.SelectedIndex = 0;
@@ -206,12 +239,6 @@ namespace SageX3SoapWsTester
                     break;
                 case "DELETE":
                     pnlCriteria.Enabled = true;
-                    break;
-                case "INSERTLINES":
-                    PopulateBlockKeys();
-                    pnlCriteria.Enabled = true;
-                    pnlParam.Enabled = true;
-                    GetSampleParameters();
                     break;
                 case "DELETELINES":
                     PopulateBlockKeys();
@@ -288,7 +315,6 @@ namespace SageX3SoapWsTester
                 lstMethods.Items.Add("deleteLines");
                 lstMethods.Items.Add("modify");
                 lstMethods.Items.Add("actionObject");
-                lstMethods.Items.Add("insertLines");
             }
             else
             {
@@ -754,6 +780,18 @@ namespace SageX3SoapWsTester
             return accessToken;
         }
 
+        private void TextBoxKeyDown(KeyEventArgs e, TextBox txtBox)
+        {
+            if (e.Control & e.KeyCode == Keys.A)
+            {
+                txtBox.SelectAll();
+            }
+            else if (e.Control & e.KeyCode == Keys.Back)
+            {
+                SendKeys.SendWait("^+{LEFT}{BACKSPACE}");
+            }
+        }
+
         #endregion
 
         #region Left list methods
@@ -920,12 +958,6 @@ namespace SageX3SoapWsTester
                         objectKeys = GetCriteria(cAdxCallContext);
                         lineKeys = GetDeleteLineKeys();
                         cAdxResultXml = _x3Ws.deleteLines(cAdxCallContext, wsName, objectKeys, blockKey, lineKeys);
-                        break;
-                    case "INSERTLINES":
-                        //this action is not implimented
-                        objectKeys = GetCriteria(cAdxCallContext);
-                        lineKeys = GetDeleteLineKeys();
-                        cAdxResultXml = _x3Ws.insertLines(cAdxCallContext, wsName, objectKeys, blockKey, "1", objectXml);
                         break;
                     case "ACTIONOBJECT":
                         //**********************************************************************************************
