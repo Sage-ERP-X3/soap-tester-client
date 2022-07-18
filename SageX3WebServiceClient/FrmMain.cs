@@ -29,6 +29,10 @@ namespace SageX3SoapWsTester
 
         private void FrmMain_Load(object sender, EventArgs e)
         {
+            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls
+                | SecurityProtocolType.Tls11
+                | SecurityProtocolType.Tls12
+                | SecurityProtocolType.Ssl3;
             SetInitialValues();
         }
 
